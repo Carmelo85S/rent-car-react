@@ -1,0 +1,15 @@
+@use '../variable/font';
+@import '../mixin/mixin';
+
+.title-container{
+    @include dimension(1300px, 100px);
+
+    .title{
+        font-family: font.$primary;
+        font-weight: 400;
+        font-size: 70px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

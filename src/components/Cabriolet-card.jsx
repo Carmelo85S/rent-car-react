@@ -1,4 +1,4 @@
-import '../style/car-gallery/car-gallery.css';
+import '../style/car-gallery/card-gallery.css';
 
 const Cabriolet = (props) => {
     return(

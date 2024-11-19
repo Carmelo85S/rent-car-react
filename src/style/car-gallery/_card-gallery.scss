@@ -4,10 +4,17 @@
 .card{
     @include dimension(400px, 420px);
     @include flexbox(space-around, center, column);
-    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius:4px;
     margin-bottom: 40px;
     padding: 20px 0;
     box-shadow: 5px 5px 10px rgb(80, 79, 79);
+    transition: 0.1s ease-in;
+
+    &:hover{
+        border: 2px solid rgb(255, 137, 137);
+    }
 
     img{
         width: 350px;

@@ -1,8 +1,18 @@
 @import './style/mixin/mixin';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.card-wrapper{
+html{
+    scroll-behavior: smooth;
+}
+
+.wrapper{
     @include wrapper;
-    display: flex;
+    @include flexbox(center, center, column);
+    background-color: rgb(252, 252, 252);
 
     .card-container{
         @include container;
