@@ -1,0 +1,12 @@
+@import './style/mixin/mixin';
+
+.card-wrapper{
+    @include wrapper;
+    display: flex;
+
+    .card-container{
+        @include container;
+        @include flexbox(space-around, center, row, wrap);
+        margin: auto;
+    }
+}

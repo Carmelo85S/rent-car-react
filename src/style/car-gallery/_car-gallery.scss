@@ -1,0 +1,35 @@
+@use '../variable/color';
+@import '../mixin/mixin';
+
+.card{
+    @include dimension(400px, 420px);
+    @include flexbox(space-around, center, column);
+    border: 1px solid black;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    box-shadow: 5px 5px 10px rgb(80, 79, 79);
+
+    img{
+        width: 350px;
+        border-radius: 4px;
+    }
+
+    .text-container{
+        @include dimension(200px, 50px);
+        @include flexbox(space-between, center, column);
+
+        .card-title{
+            @include font-car-model;
+        }
+
+        .card-info{
+            @include font-car-info;
+        }
+    }
+
+    .rentBtn{
+        @include rentBtn;
+        color: color.$textPrimary;
+        background-color: color.$bgBtn;
+    }
+}

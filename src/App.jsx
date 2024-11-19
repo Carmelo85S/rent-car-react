@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import AstonMartin from './assets/cabriolet/aston-martin.jpg';
+import Genesis from './assets/cabriolet/genesis-g90.jpg';
+import BmwS8 from './assets/cabriolet/bmw-8.jpg';
+import BmwZ4 from './assets/cabriolet/bmw-z4.jpg';
+import Mustang from './assets/cabriolet/ford-mustang.jpg';
+import Maserati from './assets/cabriolet/Maserati.jpg';
+import Cabriolet from './components/Cabriolet';
+import './index.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="card-wrapper">
+      <div className="card-container">
+        <Cabriolet img={AstonMartin} title="Aston Martin" info="12000 sek per day" />
+        <Cabriolet img={Genesis} title="Genesis G90" info="12000 sek per day" />
+        <Cabriolet img={BmwS8} title="BMW S8" info="2000 sek per day" />
+        <Cabriolet img={BmwZ4} title="BMW Z4" info="1000 sek per day" />
+        <Cabriolet img={Mustang} title="Ford Mustang" info="1200 sek per day" />
+        <Cabriolet img={Maserati} title="Maserati" info="12000 sek per day" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
