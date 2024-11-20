@@ -2,7 +2,7 @@
 @import '../mixin/mixin';
 
 .card{
-    @include dimension(400px, 420px);
+    @include dimension(380px, 420px);
     @include flexbox(space-around, center, column);
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
