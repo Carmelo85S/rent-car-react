@@ -6,8 +6,8 @@ import {
   Mustang, 
   Maserati 
 } from '../assets/cabriolet/index';
-import Title from './Title';
-import Cabriolet from './Cabriolet-card';
+import Title from '../components/Title';
+import Cabriolet from '../components/Car-card';
 
 //import style for the page
 import '../index.css';

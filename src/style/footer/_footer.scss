@@ -1,0 +1,46 @@
+@use '../variable/color';
+@use '../variable/font';
+@import '../mixin/mixin';
+
+.footer-wrapper{
+    @include wrapper;
+    min-height: 450px;
+    @include flexbox(space-around, center, column);
+    background-color: color.$bgFooter;
+
+    .img-logo{
+        @include dimension(900px, 100px);
+    }
+
+    .footer-container{
+        @include container;
+        @include flexbox(space-around, center, row, wrap);
+        
+        .list-container{
+            list-style: none;
+            @include dimension(250px, 150px);
+            @include flexbox(space-between, center, column);
+
+            li{
+                .link{
+                    color: color.$textNav;
+                    font-size: 16px;
+                    text-decoration: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    font-family: font.$primary;
+                    letter-spacing: 2px;
+                    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+                    border-radius: 4px;
+                    
+                    &:hover {
+                        color: color.$textNavHover;
+                        transform: translateY(-2px); 
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                    }
+                }
+            }
+        }
+
+    }
+}

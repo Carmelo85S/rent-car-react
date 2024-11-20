@@ -1,4 +1,4 @@
-import '../style/title/title.css';
+import '../style/title-gallery/title.css';
 
 const Title = (props) => {
     return(

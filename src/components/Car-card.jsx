@@ -1,6 +1,6 @@
 import '../style/car-gallery/card-gallery.css';
 
-const Cabriolet = (props) => {
+const Car = (props) => {
     return(
         <div className="card">
             <img src={props.img} alt="car image" className="img" />
@@ -13,4 +13,4 @@ const Cabriolet = (props) => {
     )
 }
 
-export default Cabriolet;
+export default Car;

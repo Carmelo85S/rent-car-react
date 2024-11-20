@@ -9,7 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 
+
 .wrapper{
+    padding:120px;
+
     @include wrapper;
     @include flexbox(center, center, column);
     background-color: rgb(252, 252, 252);
