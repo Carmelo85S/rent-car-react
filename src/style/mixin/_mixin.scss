@@ -26,6 +26,7 @@
     max-width: 1300px;
     width: 100%;
     min-height: auto;
+    margin:auto;
 }
 
 @mixin dimension($max-width: 100vw, $min-heigth: 200px, $width: 100%){
@@ -69,6 +70,15 @@
     }
 }
 
+@mixin h1{
+    font-family: font.$primary;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 30px;
+    letter-spacing: 8px;
+    line-height: 56px;
+}
+
 @mixin h3{
     font-family: font.$primary;
     font-weight: 500;
@@ -76,4 +86,13 @@
     line-height: 30px;
     letter-spacing: 2px;
     line-height: 26px;
-  }
+}
+
+@mixin info{
+    font-family: font.$primary;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    line-height: 26px;
+}

@@ -9,7 +9,7 @@
     position:fixed;
 
     .navigation {
-        @include dimension(1300px, 30px);
+        @include dimension(1300px, 50px);
         @include flexbox(space-between, center);
         margin: auto;
 

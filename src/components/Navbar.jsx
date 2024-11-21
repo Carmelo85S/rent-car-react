@@ -8,10 +8,10 @@ const Navbar = () => {
             <h3 className="logo">Ready<span>Ride</span></h3>
                 <ul className="list-container">
                     <li>
-                        <Link className="link" to="/">HOME</Link>
+                        <Link className="link" to="/home">HOME</Link>
                     </li>
                     <li>
-                        <Link className="link" to="/">ABOUT US</Link>
+                        <Link className="link" to="/about">ABOUT US</Link>
                     </li>
                     <li className='dropdown'>
                         <Link className="dropbtn" to="/">VEHICLE</Link>

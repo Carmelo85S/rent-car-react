@@ -1,0 +1,35 @@
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixin';
+
+.about-wrapper{
+    @include wrapper;
+    min-height: 100vh;
+    display: flex;
+    background-image: url(../../../assets/about/internbmw.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .about-hero-container{
+        @include container;
+        @include flexbox(center, center, column);
+
+        .about-title{
+            @include h1;
+            color: color.$textSecondary;
+        }
+
+        .info-container{
+            @include dimension(800px, 100px);
+
+            .info-text{
+                text-align: center;
+                margin: 20px;
+                @include info;
+                color: color.$textWhite;
+            }
+        }
+
+    }
+}

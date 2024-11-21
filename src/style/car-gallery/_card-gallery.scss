@@ -1,42 +1,55 @@
 @use '../variable/color';
 @import '../mixin/mixin';
 
-.card{
-    @include dimension(380px, 420px);
-    @include flexbox(space-around, center, column);
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius:4px;
-    margin-bottom: 40px;
-    padding: 20px 0;
-    box-shadow: 5px 5px 10px rgb(80, 79, 79);
-    transition: 0.1s ease-in;
+.wrapper{
+    padding:100px;
+    @include wrapper;
+    @include flexbox(center, center, column);
+    background-color: rgb(252, 252, 252);
 
-    &:hover{
-        border: 2px solid rgb(255, 137, 137);
+    .card-container{
+        @include container;
+        @include flexbox(space-around, center, row, wrap);
+        margin: auto;
     }
 
-    img{
-        width: 350px;
-        border-radius: 4px;
-    }
+    .card{
+        @include dimension(380px, 420px);
+        @include flexbox(space-around, center, column);
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius:4px;
+        margin-bottom: 40px;
+        padding: 20px 0;
+        box-shadow: 5px 5px 10px rgb(80, 79, 79);
+        transition: 0.1s ease-in;
 
-    .text-container{
-        @include dimension(200px, 50px);
-        @include flexbox(space-between, center, column);
-
-        .card-title{
-            @include font-car-model;
+        &:hover{
+            border: 2px solid rgb(255, 137, 137);
         }
 
-        .card-info{
-            @include font-car-info;
+        img{
+            width: 350px;
+            border-radius: 4px;
         }
-    }
 
-    .rentBtn{
-        @include rentBtn;
-        color: color.$textPrimary;
-        background-color: color.$bgBtn;
+        .text-container{
+            @include dimension(200px, 50px);
+            @include flexbox(space-between, center, column);
+
+            .card-title{
+                @include font-car-model;
+            }
+
+            .card-info{
+                @include font-car-info;
+            }
+        }
+
+        .rentBtn{
+            @include rentBtn;
+            color: color.$textPrimary;
+            background-color: color.$bgBtn;
+        }
     }
 }

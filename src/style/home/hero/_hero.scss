@@ -1,0 +1,65 @@
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixin';
+
+.home-hero-wrapper{
+    @include wrapper;
+    min-height: 80vh;
+    display: flex;
+    background-image: url(../../../assets/home/audi.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .home-hero-container{
+        @include dimension (1200px, 200px);
+        @include flexbox(flex-start, flex-start, column);
+        margin: auto;
+
+        .home-title{
+            max-width: 700px;
+            width: 100%;
+            min-height: 30px;
+            font-family: font.$primary;
+            font-weight: 200;
+            font-size: 90px;
+            letter-spacing: 10px;
+            color: color.$textWhite;
+            line-height: 100px;
+            animation: slide-in-title 1.3s ease-in-out;
+
+            @keyframes slide-in-title {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        }
+
+        .home-info {
+            @include info;
+            @include dimension(700px, 100px);
+            color: color.$textWhite;
+            line-height: 30px;
+            animation: slide-in-info 1s ease-in-out;
+
+            @keyframes slide-in-info {
+                0% {
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+}
+
