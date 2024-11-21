@@ -8,6 +8,9 @@ const Navbar = () => {
             <h3 className="logo">Ready<span>Ride</span></h3>
                 <ul className="list-container">
                     <li>
+                        <Link className="link" to="/test">TEST</Link>
+                    </li>
+                    <li>
                         <Link className="link" to="/home">HOME</Link>
                     </li>
                     <li>

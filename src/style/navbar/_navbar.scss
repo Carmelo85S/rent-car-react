@@ -67,7 +67,7 @@
             z-index: 1;
 
             li{
-                padding: 20px 16px;
+                padding: 10px 16px;
             }
         }
 
@@ -89,7 +89,7 @@
 
        .droplink {
             color: color.$textNav;
-            padding: 20px 16px;
+            padding: 10px 16px;
             font-size: 16px;
             text-decoration: none;
             cursor: pointer;
@@ -97,11 +97,11 @@
             letter-spacing: 2px;
             transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
             border-radius: 4px;
+            border: 0px;
             
             &:hover {
                 color: color.$textNavHover;
-                transform: translateY(-2px); 
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                transform: translateY(-2px);
             }
         }
 

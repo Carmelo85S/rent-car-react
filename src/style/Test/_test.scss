@@ -1,0 +1,62 @@
+@use '../variable/color';
+@use '../variable/font';
+@import '../mixin/mixin';
+
+.test-wrapper{
+    @include wrapper;
+    min-height: 80vh;
+    display: flex;
+    padding: 50px;
+    background-color: rgb(225, 201, 248);
+
+    .test-container{
+        @include dimension(500px, 400px);
+        @include flexbox(space-around, center, column);
+        margin:auto;
+        background-color: rgb(205, 246, 205);
+        box-shadow: 2px 2px 10px black;
+
+        .number{
+            max-width: 200px;
+            min-height: 200px;
+            width: 100%;
+            border:3px solid rgb(24, 24, 24);
+            box-shadow: 2px 2px 10px black;
+            border-radius:4px;
+            font-family: font.$primary;
+            color: black;
+            font-size: 190px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .button-container{
+            @include dimension(500px, 100px);
+            @include flexbox(space-around,center,row,wrap);
+
+                button{
+                    padding:15px 40px;
+                    border-radius: 20px;
+                    border:0px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 1.5px;
+                    color: color.$textPrimary;
+                    background-color: color.$bgBtn;
+                    box-shadow: 5px 5px 10px rgb(80, 79, 79);
+                    cursor: pointer;
+                    transition: all 0.1s ease-in;
+                
+                    &:hover{
+                        background-color:color.$bgBtnHover;
+                    }
+                
+                    &:active{
+                        transform: scale(0.99);
+                        background-color: color.$bgBtnActive;
+                    }
+                }
+             
+        }
+    }
+}
