@@ -1,0 +1,57 @@
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixin';
+
+.review-wrapper{
+    @include wrapper;
+    min-height: 70vh;
+    @include flexbox(space-around, center, column);
+    background-color: color.$bgWrapper;
+
+    .review-heading{
+        @include h2;
+        font-size: 72px;
+        text-align:right;
+        margin-top:50px;
+        font-weight:500;
+        color: color.$heading;
+    }
+
+    .review-container{
+        @include container;
+        @include flexbox(space-between, center, row, wrap);
+
+        .review-card{
+            @include dimension(300px, 200px);
+            box-shadow: 2px 4px 10px black;
+            overflow: hidden;
+            padding: 16px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-color: color.$textWhite;
+            @include flexbox(flex-start, center, column);
+
+            .review-name{
+                @include h3;
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-weight: 600;
+            }
+
+            .review-location{
+                @include h4;
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            .review-text{
+                @include info;
+                font-size: 12px;
+                text-align: center;
+                font-weight: 400;
+                padding:10px;
+            }
+        }
+    }
+}

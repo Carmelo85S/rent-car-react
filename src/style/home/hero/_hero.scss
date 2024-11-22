@@ -6,10 +6,12 @@
     @include wrapper;
     min-height: 80vh;
     display: flex;
+    flex-direction: column;
     background-image: url(../../../assets/home/audi.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    padding-top:100px;
 
     .home-hero-container{
         @include dimension (1200px, 200px);
@@ -43,7 +45,7 @@
 
         .home-info {
             @include info;
-            @include dimension(700px, 100px);
+            @include dimension(750px, 100px);
             color: color.$textWhite;
             line-height: 30px;
             animation: slide-in-info 1s ease-in-out;
@@ -60,6 +62,38 @@
             }
         }
 
+    }
+  
+    .car-category-container{
+        @include dimension(900px, 100px);
+        @include flexbox(space-between, center, row, wrap);
+        margin: auto;
+        position:relative;
+        top:90px;
+
+        img{
+            width:200px;
+            height: auto;
+            border-radius:5px;
+            margin-bottom: 20px;
+            animation: fade-in 1s ease-in-out;
+            transition:0.2s ease-in;
+            cursor: pointer;
+            box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.285);
+
+            @keyframes fade-in {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
     }
 }
 

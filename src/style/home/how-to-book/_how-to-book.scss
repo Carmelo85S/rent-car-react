@@ -1,0 +1,42 @@
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixin';
+
+.how-to-book-wrapper{
+    background-color: color.$orange;
+    @include wrapper;
+    min-height: 300px;
+    padding-top: 100px;
+
+    .how-to-book-container{
+        @include container;
+        @include flexbox(space-between, center, row, wrap);
+
+        .how-to-book-step{
+            @include dimension(200px, 160px);
+            @include flexbox(space-between, center, column);
+
+            .step-title{
+                @include h3;
+                font-size: 15px;
+                letter-spacing: 1px;
+                font-weight: 600;
+            }
+
+            .title{
+                @include h3;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            .info{
+                @include info;
+                font-size: 12px;
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
