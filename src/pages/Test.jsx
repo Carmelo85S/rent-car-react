@@ -14,7 +14,7 @@ const Test = () => {
     }
 
     const reset = () => {
-        setNumber(number === 0)
+        setNumber(0)
     }
 
     return (

@@ -81,7 +81,7 @@
 
 @mixin h2{
     font-family: font.$primary;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 42px;
     line-height: 30px;
     letter-spacing: 8px;
@@ -113,4 +113,29 @@
     line-height: 16px;
     letter-spacing: 2px;
     line-height: 26px;
+}
+
+@mixin cta{
+    padding: 5px 20px;
+    cursor: pointer;
+    color: color.$textPrimary;
+    background-color: white;
+    border: 1px solid color.$textGolden;
+    box-shadow: 5px 5px 10px rgb(80, 79, 79);
+    font-family: font.$primary;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: color.$bgBtnHover;
+        color: color.$textPrimary;
+    }
+
+    &:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
 }

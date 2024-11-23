@@ -1,0 +1,62 @@
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixin';
+
+.wrapper-services{
+    @include wrapper;
+    min-height: 100vh;
+    display: flex;
+    background-color: color.$bgWrapperDark;
+    @include flexbox(space-between,center,column);
+
+    .services-heading{
+        @include h2;
+        font-size: 72px;
+        text-align:right;
+        margin-top:50px;
+        font-weight:500;
+        color: color.$headingLight;
+    }
+
+    .services-card-container{
+        @include container;
+        @include flexbox(space-around, center, row, wrap);
+        min-height: 1000px;
+        
+        .service-card{
+            @include dimension(300px, 450px);
+            @include flexbox(space-around, center, column);
+            background-color: color.$bgWrapper;
+            border-radius:5px;
+            box-shadow: 2px 2px 12px rgb(254, 121, 121);
+            border-bottom:3px solid rgb(255, 255, 255);
+
+            .service-image{
+                width: 200px;
+                border-radius:5px;
+                box-shadow: 2px 2px 12px black;
+            }
+
+            .info-container{
+                @include dimension(300px, 100px);
+                @include flexbox(space-between, center, column);
+
+                .service-title{
+                    @include h3;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+    
+                .service-info{
+                    @include info;
+                    font-size:12px;
+                    text-align: center;
+                }
+    
+                .cta{
+                    @include cta;
+                }
+            }
+        }
+    }
+}
