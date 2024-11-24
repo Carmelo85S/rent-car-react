@@ -1,8 +1,8 @@
-import AstonMartin from './aston-martin-dbs.jpg';
-import Bugatti from './bugatti-chiron.jpg';
-import Ferrari from './ferrari-488.jpg';
-import Koenigsegg from './koenigsegg-agera-rs.jpg';
-import McLaren from './mc-laren-720S.jpg';
-import Lamborghini from './lamborghini-huracan-evo.jpg';
+import AstonMartin from './aston-martin-dbs.webp';
+import Bugatti from './bugatti-chiron.webp';
+import Ferrari from './ferrari-488.webp';
+import Koenigsegg from './koenigsegg-agera-rs.webp';
+import McLaren from './mc-laren-720S.webp';
+import Lamborghini from './lamborghini-huracan-evo.webp';
 
 export { AstonMartin, Bugatti, Ferrari, Koenigsegg, McLaren, Lamborghini };

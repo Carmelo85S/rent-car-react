@@ -65,14 +65,14 @@
     }
   
     .car-category-container{
-        @include dimension(700px, 100px);
+        @include dimension(800px, 100px);
         @include flexbox(space-between, center, row, wrap);
         margin: auto;
         position:relative;
         top:80px;
 
         img{
-            width:150px;
+            width:180px;
             height: auto;
             border-radius:5px;
             margin-bottom: 20px;

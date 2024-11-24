@@ -1,0 +1,76 @@
+@use '../variable/color';
+@use '../variable/font';
+@import '../mixin/mixin';
+
+.form-wrapper {
+    @include wrapper;
+
+    .form-container {
+        @include flexbox(space-between, center, row, wrap);
+        @include container;
+
+        .form {
+            @include dimension(600px, 400px);
+
+            form {
+                @include flexbox(space-between, flex-start, column);
+
+                label {
+                    display: block;
+                    margin-bottom: 0.5rem;
+                    font-family: font.$primary;
+                    font-weight: 500;
+                    color: color.$textPrimary; 
+                }
+
+                input[type="text"],
+                input[type="email"],
+                textarea {
+                    width: 100%;
+                    max-width: 500px;
+                    padding: 0.5rem;
+                    margin-bottom: 1rem;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    font-family: font.$primary;
+                    font-size:14px;
+                    letter-spacing: 1px;
+                    color: color.$textPrimary;
+
+                    &:hover {
+                        background-color: color.$bgHover;
+                    }
+
+                    &:focus {
+                        border-color: color.$textSecondary;
+                        outline: none; 
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                    min-height: 100px;}
+
+
+                button {
+                    @include cta-alternative;
+                    width: 100%;
+                    max-width: 200px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .map {
+            flex: 1;
+            padding: 1rem;
+
+            iframe {
+                max-width: 100%;
+                width: 100%;
+                min-height: 500px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

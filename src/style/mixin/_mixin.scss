@@ -139,3 +139,40 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 }
+
+@mixin cta-alternative {
+    padding: 8px 24px;
+    cursor: pointer;
+    color: color.$textPrimary;
+    background-color: color.$bgBtn;
+    border: 2px solid color.$textGolden;
+    font-family: font.$primary;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 12px;
+
+    &:hover {
+        background-color: color.$bgBtnHover;
+        color: color.$textPrimary;
+        border-color: color.$textGolden;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+        transform: translateY(2px);
+        background-color: color.$bgBtnActive;
+        color: color.$textPrimary;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(250, 225, 85, 0.6);
+    }
+}

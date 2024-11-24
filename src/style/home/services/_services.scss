@@ -13,7 +13,7 @@
         @include h2;
         font-size: 72px;
         text-align:right;
-        margin-top:50px;
+        margin:40px 0;
         font-weight:500;
         color: color.$headingLight;
     }
@@ -54,7 +54,7 @@
                 }
     
                 .cta{
-                    @include cta;
+                    @include cta-alternative;
                 }
             }
         }

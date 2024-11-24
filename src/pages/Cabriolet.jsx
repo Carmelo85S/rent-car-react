@@ -15,27 +15,12 @@ import '../index.css';
 //Create an objects array with all cars info
 const cabriolet = () => {
   const cabriolets = [
-    { img: AstonMartin, 
-      title: "Aston Martin", 
-      info: "12000 sek per day" 
-    },
-    { img: Porsche, 
-      title: "Porsche 911", 
-      info: "1800 sek per day" 
-    },
-    { img: BmwS8, 
-      title: "BMW S8", 
-      info: "2000 sek per day" 
-    },
-    { img: BmwZ4, 
-      title: "BMW Z4", 
-      info: "1000 sek per day" },
-    { img: Mustang, 
-      title: "Ford Mustang", info: "1200 sek per day" },
-    { img: Maserati, 
-      title: "Maserati", 
-      info: "12000 sek per day" 
-    }
+    { img: AstonMartin, title: "Aston Martin", info: "12000 SEK per day" },
+    { img: Porsche, title: "Porsche 911", info: "1800 SEK per day" },
+    { img: BmwS8, title: "BMW S8", info: "2000 SEK per day" },
+    { img: BmwZ4, title: "BMW Z4", info: "1000 SEK per day" },
+    { img: Mustang, title: "Ford Mustang", info: "1200 SEK per day" },
+    { img: Maserati, title: "Maserati", info: "12000 SEK per day" }
   ];
 
   //return the page

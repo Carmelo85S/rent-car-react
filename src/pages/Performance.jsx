@@ -1,8 +1,13 @@
 import { 
-    AstonMartin, Bugatti, Ferrari, Koenigsegg, McLaren, Lamborghini
+    AstonMartin, 
+    Bugatti, 
+    Ferrari, 
+    Koenigsegg, 
+    McLaren, 
+    Lamborghini 
   } from '../assets/performance/index';
   import Title from '../components/Title';
-  import Cabriolet from '../components/Car-card';
+  import Performance from '../components/Car-card';
   
   //import style for the page
   import '../index.css';
@@ -10,32 +15,14 @@ import {
   //Create an objects array with all cars info
   const performance = () => {
     const perform = [
-      { img: AstonMartin, 
-        title: "Aston Martin", 
-        info: "12000 sek per day" 
-      },
-      { img: Bugatti, 
-        title: "Bugatti Chiron", 
-        info: "1800 sek per day" 
-      },
-      { img: Ferrari, 
-        title: "Ferrari 488", 
-        info: "3400 sek per day" 
-      },
-      { img: Koenigsegg, 
-        title: "Koenigsegg", 
-        info: "10200 sek per day" 
-    },
-      { img: McLaren, 
-        title: "McLaren 720S", 
-        info: "12000 sek per day" 
-    },
-      { img: Lamborghini, 
-        title: "Lamborghini Huracan Evo", 
-        info: "12000 sek per day" 
-      }
+      { img: AstonMartin, title: "Aston Martin", info: "12000 SEK per day" },
+      { img: Bugatti, title: "Bugatti Chiron", info: "1800 SEK per day" },
+      { img: Ferrari, title: "Ferrari 488", info: "3400 SEK per day" },
+      { img: Koenigsegg, title: "Koenigsegg Jesko", info: "10200 SEK per day" },
+      { img: McLaren, title: "McLaren 720S", info: "12000 SEK per day" },
+      { img: Lamborghini, title: "Lamborghini Huracán Evo", info: "12000 SEK per day" }
     ];
-  
+    
     //return the page
     return (
   
@@ -49,7 +36,7 @@ import {
           
           {/* Iterating through the 'performances' array to create a Performance component for each car, pass the info as props */}
           {perform.map((car, index) => (
-            <Cabriolet 
+            <Performance 
               key={index}
               img={car.img} 
               title={car.title}

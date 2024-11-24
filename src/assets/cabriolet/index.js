@@ -1,8 +1,8 @@
-import AstonMartin from './aston-martin.jpg';
-import Porsche from './porsche-911.jpg';
-import BmwS8 from './bmw-8.jpg';
-import BmwZ4 from './bmw-z4.jpg';
-import Mustang from './ford-mustang.jpg';
-import Maserati from './Maserati.jpg';
+import AstonMartin from './aston-martin.webp';
+import Porsche from './porsche-911.webp';
+import BmwS8 from './bmw-8.webp';
+import BmwZ4 from './bmw-z4.webp';
+import Mustang from './ford-mustang.webp';
+import Maserati from './Maserati.webp';
 
 export { AstonMartin, Porsche, BmwS8, BmwZ4, Mustang, Maserati };
