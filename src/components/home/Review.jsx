@@ -1,4 +1,5 @@
 import '../../style/home/review/review.css';
+import Title from '../Title';
 
 const Review = () => {
 
@@ -27,9 +28,7 @@ const Review = () => {
 
     return(
         <div className="review-wrapper">
-            <h2 className="review-heading">
-                OUR CUSTOMERS VOICES
-            </h2>
+            <Title title="Our customers say"/>
             <section className="review-container">
                 {data.map((review, index) => (
                     <div key={index} className="review-card">

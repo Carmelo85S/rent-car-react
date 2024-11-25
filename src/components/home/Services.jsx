@@ -7,6 +7,7 @@ import PrivateLounge from '../../assets/home/services/private-lounge.webp';
 import Wedding from '../../assets/home/services/wedding.webp';
 import DriveExp from '../../assets/home/services/drive-experience.webp';
 import DrivingTour from '../../assets/home/services/driving-tour.webp';
+import Title from '../Title';
 import '../../style/home/services/services.css';
 
 const Services = () => {
@@ -63,10 +64,10 @@ const Services = () => {
 
     return(
         <div className="wrapper-services">
-            <h2 className="services-heading">
-                OUR SERVICES
-            </h2>
-            <div className="services-card-container">
+            <section className="title-container">
+                <h1 className="title">Meet our team</h1>
+            </section>
+                <div className="services-card-container">
                 {servicesData.map((service, index) =>
                 <div key={index} className="service-card">
                     <img src={service.img} alt={service.title} className="service-image" />

@@ -1,0 +1,28 @@
+@use '../../variable/font';
+@use '../../variable/color';
+@import '../../mixin/mixin';
+
+.team-wrapper{
+    @include wrapper;
+    background-color: color.$orange;
+    min-height: 700px;
+
+    .team-container{
+        @include container;
+
+        .team-info-text-container{
+            @include dimension(1200px, 400px);
+            margin:auto;
+            @include flexbox(space-between, center, column);
+
+            .info{
+                @include info;
+                text-align: justify;
+
+                span{
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

@@ -8,20 +8,28 @@
     display: flex;
     background-color: color.$bgWrapperDark;
     @include flexbox(space-between,center,column);
-
-    .services-heading{
-        @include h2;
-        font-size: 72px;
-        text-align:right;
-        margin:40px 0;
-        font-weight:500;
-        color: color.$headingLight;
+    
+    .title-container{
+        @include dimension(1300px, 200px);
+        @include flexbox(center, center);
+        margin: auto;
+    
+        .title{
+            font-family: font.$primary;
+            color: color.$textWhite;
+            font-weight: 400;
+            font-size: 70px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            text-align: center;
+        }
     }
 
     .services-card-container{
         @include container;
         @include flexbox(space-around, center, row, wrap);
         min-height: 1000px;
+        margin-bottom: 40px;
         
         .service-card{
             @include dimension(300px, 450px);

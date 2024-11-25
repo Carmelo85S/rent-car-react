@@ -1,0 +1,34 @@
+@use '../../variable/font';
+@use '../../variable/color';
+@import '../../mixin/mixin';
+
+.mission-wrapper{
+    @include wrapper;
+    background-color: color.$bgWrapper;
+
+    .mission-content-container{
+        @include container;
+        min-height: 400px;
+        @include flexbox(space-between, flex-start, row, wrap);
+
+        .image{
+            @include dimension(500px, auto);
+            border-radius: 4px;
+            box-shadow: 2px 2px 12px rgb(69, 69, 69);
+        }
+
+        .info-container{
+            @include dimension(700px, 320px);
+            @include flexbox(space-between,center,column);
+
+            .info{
+                @include info;
+                text-align: justify;
+
+                span{
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

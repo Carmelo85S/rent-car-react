@@ -7,17 +7,16 @@
     min-height: 100vh;;
     display:flex;
     @include flexbox(space-between, center, column);
-    margin:50px 0;
-
+    
     .rental-container{
         @include container;
         @include flexbox(space-between, center, row, wrap);
 
         .info-container{
-            @include dimension(600px, 900px);
+            @include dimension(600px, 700px);
             @include info;
             text-align: justify;
-            @include flexbox(space-evenly, $flex-direction: column);
+            @include flexbox(space-between, $flex-direction: column);
         }
         .img-container {
             @include dimension(600px, 750px);
