@@ -1,14 +1,28 @@
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { NavbarContext } from '../pages/ColorPicker';
 import '../style/navbar/navbar.css';
 
 const Navbar = () => {
+
+    // Using the useContext hook to access the current navbar background color 
+    // from the NavbarContext, which was provided by the ColorPicker component
+    const navbar = useContext(NavbarContext);
+
     return(
-        <div className = "header">
+        // The 'header' div is given a dynamic background color that comes from the 'navbar' value in the context
+        // This allows the background color of the Navbar to change based on the user's selection in the ColorPicker component
+        <div className = "header" style={{ backgroundColor: navbar }}>
+
+
             <nav className="navigation">
             <h3 className="logo">Ride<span>Ready</span></h3>
                 <ul className="list-container">
                     <li>
-                        <Link className="link" to="/test">TEST</Link>
+                        <Link className="link" to="/test">COUNTER</Link>
+                    </li>
+                    <li>
+                        <Link className="link" to="/color-picker">PICK</Link>
                     </li>
                     <li>
                         <Link className="link" to="/">HOME</Link>
@@ -39,7 +53,7 @@ const Navbar = () => {
                             <li>
                                 <Link className="droplink" to="/">MONTHLY SUB</Link></li>
                             <li>
-                                <Link className="droplink" to="/">CHAFFEAUR</Link></li>
+                                <Link className="droplink" to="/chauffeur">CHAFFEAUR</Link></li>
                             <li>
                                 <Link className="droplink" to="/">PRIVATE LOUNGE</Link></li>
                             <li>
