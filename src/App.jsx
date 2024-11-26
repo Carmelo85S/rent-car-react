@@ -10,7 +10,13 @@ import Performance from './pages/Performance';
 import Suv from './pages/Suv';
 import Sedan from './pages/Sedan';
 import Chaffeur from './pages/Chauffeur';
-
+import ShortTerm from './pages/ShortTerm';
+import LongTerm from './pages/LongTerm';
+import PrivateLounge from './pages/PrivateLounge';
+import Wedding from './pages/Wedding';
+import SpeedDrive from './pages/SpeedDrive';
+import DrivingTour from './pages/DrivingTour';
+import MonthlySub from './pages/MonthlySub';
 
 const App = () => { 
   return (
@@ -27,6 +33,13 @@ const App = () => {
           <Route path="/suv" element={<Suv />} />
           <Route path="/sedan" element={<Sedan />} />
           <Route path="/chauffeur" element={<Chaffeur />} />
+          <Route path="/monthly-sub" element={<MonthlySub />} />
+          <Route path="/long-term" element={<LongTerm />} />
+          <Route path="/short-term" element={<ShortTerm />} />
+          <Route path="/private-lounge" element={<PrivateLounge />} />
+          <Route path="/wedding" element={<Wedding />} />
+          <Route path="/speed-drive" element={<SpeedDrive />} />
+          <Route path="/driving-tour" element={<DrivingTour />} />
         </Routes>
       <Footer/>
       </BrowserRouter>

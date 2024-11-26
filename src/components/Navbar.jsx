@@ -51,21 +51,21 @@ const Navbar = () => {
                         <Link className="dropbtn" to="/">SERVICE</Link>
                         <ul class="dropdown-content-service">
                             <li>
-                                <Link className="droplink" to="/">MONTHLY SUB</Link></li>
+                                <Link className="droplink" to="/monthly-sub">MONTHLY SUB</Link></li>
                             <li>
                                 <Link className="droplink" to="/chauffeur">CHAFFEAUR</Link></li>
                             <li>
-                                <Link className="droplink" to="/">PRIVATE LOUNGE</Link></li>
+                                <Link className="droplink" to="/private-lounge">PRIVATE LOUNGE</Link></li>
                             <li>
-                                <Link className="droplink" to="/">LONG TERM</Link></li>
+                                <Link className="droplink" to="/long-term">LONG TERM</Link></li>
                             <li>
-                                <Link className="droplink" to="/">SHORT TERM</Link></li>
+                                <Link className="droplink" to="/short-term">SHORT TERM</Link></li>
                             <li>
-                                <Link className="droplink" to="/">WEDDING CAR</Link></li>
+                                <Link className="droplink" to="/wedding">WEDDING CAR</Link></li>
                             <li>
-                                <Link className="droplink" to="/">DRIVING TOUR</Link></li>
+                                <Link className="droplink" to="/driving-tour">DRIVING TOUR</Link></li>
                             <li>
-                                <Link className="droplink" to="/">SPEED DRIVE</Link>
+                                <Link className="droplink" to="/speed-drive">SPEED DRIVE</Link>
                             </li>
                         </ul>
                     </li>

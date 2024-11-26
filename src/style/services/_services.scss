@@ -1,0 +1,115 @@
+@use '../variable/font';
+@use '../variable/color';
+@import '../mixin/mixin';
+
+//Hero
+.wrapper-category{
+    @include wrapper;
+    min-height: 60vh;
+    background-image: url(../../assets/services/hero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:70px;
+
+    .category-container{
+        @include container;
+
+        .category-container-heading{
+            @include dimension(1300px, 200px);
+            @include flexbox(flex-start, center);
+
+            .title{
+                @include h1;
+                text-transform: uppercase;
+                text-align: center;
+                color: color.$textSecondary;
+            }
+        }
+    }
+}
+
+//info
+.wrapper-info{
+    @include wrapper;
+    
+    .info-container{
+        @include container;
+        @include flexbox(space-between, center, row, wrap);
+
+        .info-text-container-left{
+            @include dimension(600px, 400px);
+            @include flexbox(space-around, flex-start, column);
+
+            .head{
+                @include h2;
+                font-size: 24px;
+            }
+
+            .info{
+                @include info;
+            }
+
+            .cta{
+                @include cta-alternative;
+            }
+        }
+
+        .img-info-container-right{
+            @include dimension(600px, 500px);
+            @include flexbox(center, center);
+
+            img{
+                @include dimension(500px, auto);
+                border-radius:4px;
+                box-shadow: 2px 2px 12px black;
+            }
+        }
+    }
+}
+
+//Banner
+.wrapper-text-banner{
+    @include wrapper;
+
+    .text-banner-container{
+        @include dimension(1000px, 300px);
+        @include flexbox($align-items: center);
+        margin-left: auto;
+    }
+
+    .text{
+        @include h2;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+}
+
+//Content
+.wrapper-content{
+    @include wrapper;
+
+    .content-container{
+        @include container;
+        @include flexbox(space-between, center, row, wrap);
+
+        .text-container{
+            @include dimension(600px, 400px);
+            @include flexbox(space-around, flex-start, column);
+
+            .info{
+                @include info;
+            }
+        }
+
+        .img-content{
+            @include dimension(500px, 400px);
+
+            img{
+                @include dimension(500px, auto);
+                border-radius:4px;
+                box-shadow: 2px 2px 12px black
+            }
+        }
+    }
+}
