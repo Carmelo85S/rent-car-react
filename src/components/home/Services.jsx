@@ -10,55 +10,56 @@ import DrivingTour from '../../assets/home/services/driving-tour.webp';
 import Title from '../Title';
 import '../../style/home/services/services.css';
 
+
 const Services = () => {
     const servicesData = [
         {
             img: Chauffeur,
             title:'Chauffeur',
             info: 'Ensure your safety and comfort with an elegant touch to your journey.',
-            link: '/services/chauffeur'
+            link: '/chauffeur'
         },
         {
             img: MonthlySub,
             title:'Monthly Subscription',
             info: 'Experience the freedom of driving a different luxury vehicle every month.',
-            link: '/services/monthly-subscription'
+            link: '/monthly-sub'
         },
         {
             img: Long,
             title:'Long Term Rental',
             info: 'Perfect blend of luxury and reliability with our long-term car rental services.',
-            link: '/services/long-term'
+            link: '/long-term'
         },
         {
             img: Short,
             title:'Short Term Rental',
             info: 'Perfect for business trips or spontaneous adventures.',
-            link: '/services/short-term'
+            link: '/short-term'
         },
         {
             img: PrivateLounge,
             title:'Private Lounge',
             info: 'Enjoy exclusive access to private airport lounges when you rent with us.',
-            link: '/services/private-lounge'
+            link: '/private-lounge'
         },
         {
             img: Wedding,
             title:'Wedding',
             info:'Modern elegance to complement your celebration.',
-            link:'/services/wedding'
+            link:'/wedding'
         },
         {
             img: DriveExp,
             title:'Drive Experience',
             info:'Experience the thrill of speed on a professional racetrack!',
-            link:'/services/drive-experience'
+            link:'/speed-drive'
         },
         {
             img: DrivingTour,
             title:'Driving Tour',
             info:'Unforgettable adventure with our scenic driving tours!',
-            link:'/services/driving-tour'
+            link:'/driving-tour'
         }
     ];
 

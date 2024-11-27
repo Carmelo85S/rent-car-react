@@ -1,0 +1,67 @@
+@use '../variable/color';
+@use '../variable/font';
+@import '../mixin/mixin';
+
+.wrapper-contact{
+    @include wrapper;
+    min-height: 60vh;
+    background-image: url(../../assets/contact/contact.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:70px;
+
+    .contact-container{
+        @include container;
+        @include flexbox(space-between, center, row, wrap);
+
+        &-heading{
+            @include dimension(1300px, 200px);
+            @include flexbox(flex-start, center);
+
+            .title{
+                @include dimension(400px, 30px);
+                @include h1;
+                text-transform: uppercase;
+                text-align: center;
+                color: color.$textSecondary;
+            }
+        }
+    }
+}
+
+.info-wrapper{
+    @include wrapper;
+
+    .info-container{
+        @include dimension(1000px, 400px);
+        margin: auto;
+        @include flexbox(space-around, center, row);
+
+        .info-card{
+            @include dimension(300p, 150px);
+            @include flexbox(flex-start, center, column);
+
+
+            .title{
+                @include h2;
+                font-size: 16px;
+            }
+
+            .info-contact{
+                @include info;
+                font-size: 10px;
+            }
+
+            .contact-mail{
+                @include info;
+                font-size: 10px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}

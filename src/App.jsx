@@ -17,11 +17,14 @@ import Wedding from './pages/Wedding';
 import SpeedDrive from './pages/SpeedDrive';
 import DrivingTour from './pages/DrivingTour';
 import MonthlySub from './pages/MonthlySub';
+import ContactInfo from './pages/ContactInfo';
+import ScrollTop from './components/ScrollTop';
 
 const App = () => { 
   return (
     <div>
       <BrowserRouter>
+      <ScrollTop />
       <Navbar />
         <Routes>
           <Route path="/test" element={<Counter />} />
@@ -40,6 +43,7 @@ const App = () => {
           <Route path="/wedding" element={<Wedding />} />
           <Route path="/speed-drive" element={<SpeedDrive />} />
           <Route path="/driving-tour" element={<DrivingTour />} />
+          <Route path="/contact-info" element={<ContactInfo />} />
         </Routes>
       <Footer/>
       </BrowserRouter>
