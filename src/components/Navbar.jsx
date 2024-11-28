@@ -23,6 +23,9 @@ const Navbar = () => {
                             <li>
                                 <Link className="droplink" to="/color-picker">PICKER</Link>
                             </li>
+                            <li>
+                                <Link className="droplink" to="/to-do-list">TO DO LIST</Link>
+                            </li>
                         </ul>
                     </li>
 

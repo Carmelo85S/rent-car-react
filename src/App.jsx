@@ -18,6 +18,7 @@ import SpeedDrive from './pages/SpeedDrive';
 import DrivingTour from './pages/DrivingTour';
 import MonthlySub from './pages/MonthlySub';
 import ContactInfo from './pages/ContactInfo';
+import ToDoList from './pages/ToDoList';
 import ScrollTop from './components/ScrollTop';
 
 const App = () => { 
@@ -29,6 +30,7 @@ const App = () => {
         <Routes>
           <Route path="/test" element={<Counter />} />
           <Route path="/color-picker" element={<ColorPicker/>} />
+          <Route path="/to-do-list" element={<ToDoList/>} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/cabriolet" element={<Cabriolet />} />
