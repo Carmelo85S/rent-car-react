@@ -28,7 +28,7 @@ const Chauffeur = () => {
                         enjoy every moment, whether it's for business, special occasions, or city tours. With a fleet
                         of premium vehicles, we guarantee style, safety, and personalized service tailored to your needs.
                     </p>
-                    <Link className="cta" to="/contact">Contact us</Link>
+                    <Link className="cta" to="/contact-info">Contact us</Link>
                 </section>
                 <section className="img-info-container-right">
                     <img src={Chauffeur1} alt="chaffeur opening car door to a woman" />

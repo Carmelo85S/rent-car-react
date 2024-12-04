@@ -27,7 +27,7 @@ const PrivateLounge = () => {
                         our lounge is the perfect place to relax before your journey. Whether you're waiting for your vehicle, enjoying a 
                         pre-drive refreshment, or needing a quiet space to work, our Private Lounge provides a sophisticated and intimate atmosphere.
                     </p>
-                    <Link className="cta" to="/contact">Contact us</Link>
+                    <Link className="cta" to="/contact-info">Contact us</Link>
                 </section>
                 <section className="img-info-container-right">
                     <section className="img-info">

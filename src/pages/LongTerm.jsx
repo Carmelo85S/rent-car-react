@@ -27,7 +27,7 @@ const LongTerm = () => {
                             as long as you need. Perfect for both business and leisure, our flexible rental options ensure you have 
                             the right car to suit your needs, without the commitments of ownership.
                         </p>
-                        <Link className="cta" to="/contact">Contact us</Link>
+                        <Link className="cta" to="/contact-info">Contact us</Link>
                     </section>
                     <section className="img-info-container-right">
                         <section className="img-info">

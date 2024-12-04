@@ -27,7 +27,7 @@ const Wedding = () => {
                             We provide a stylish, comfortable, and memorable experience for the bride, groom, and guests. 
                             Our chauffeurs are professionally trained, ensuring a smooth and timely journey for your special event.
                         </p>
-                        <Link className="cta" to="/contact">Contact us</Link>
+                        <Link className="cta" to="\">Contact us</Link>
                     </section>
                     <section className="img-info-container-right">
                         <section className="img-info">

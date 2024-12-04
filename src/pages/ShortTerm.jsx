@@ -27,7 +27,7 @@ const ShortTerm = () => {
                             offers you the freedom to drive a premium vehicle without the hassle of long-term commitments. 
                             Experience seamless luxury and unparalleled convenience for every journey.
                             </p>
-                            <Link className="cta" to="/contact">Contact us</Link>
+                            <Link className="cta" to="/contact-info">Contact us</Link>
                         </section>
                         <section className="img-info-container-right">
                             <section className="img-info">

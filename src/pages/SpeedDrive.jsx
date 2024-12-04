@@ -29,7 +29,7 @@ const SpeedDrive = () => {
                         the rush of acceleration and the control needed to handle every curve. Whether you're a seasoned 
                         enthusiast or new to track driving, we promise an unforgettable, adrenaline-pumping adventure.
                         </p>
-                        <Link className="cta" to="/contact">Contact us</Link>
+                        <Link className="cta" to="/contact-info">Contact us</Link>
                     </section>
                     <section className="img-info-container-right">
                         <section className="img-info">

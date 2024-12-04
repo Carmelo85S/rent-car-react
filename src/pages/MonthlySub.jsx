@@ -28,7 +28,7 @@ const MonthlySub = () => {
                             flexible plans allow you to drive the car of your choice while keeping the freedom to adjust your selection 
                             at any time.
                         </p>
-                        <Link className="cta" to="/contact">Contact us</Link>
+                        <Link className="cta" to="/contact-info">Contact us</Link>
                     </section>
                     <section className="img-info-container-right">
                         <section clclassNameass="img-info">

@@ -28,7 +28,7 @@ const DrivingTour = () => {
                         and guides provide a seamless, enriching experience, allowing you to fully relax and
                         take in every beautiful detail along the way.
                         </p>
-                        <Link className="cta" to="/contact">Contact us</Link>
+                        <Link className="cta" to="/contact-info">Contact us</Link>
                     </section>
                     <section className="img-info-container-right">
                         <section className="img-info">
