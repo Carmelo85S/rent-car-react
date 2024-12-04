@@ -5,11 +5,14 @@ import "../style/Test/ToDoList.css";
 const ToDoList = () => {
         const [tasks, setTasks] = useState([]);
 
-  //this function take the input value and set it as element in the array
+        // State to track the input field
+        const [newTask, setNewTask] = useState("");
+
+  //this function check the input value and if it is not an empty string, add the element in the array
   const handleAddTask = () => {
-        const newTask = document.getElementById("taskInput").value;
-        document.getElementById("taskInput").value = "";
-        setTasks((t) => [...t, newTask]);
+    if (newTask.trim() === "") return; // If empty string doesn't add to the array
+    setTasks((prevTasks) => [...prevTasks, newTask]); // Add task to the array
+    setNewTask(""); // Clear the input field
   };
 
   //this function remove the task by index
@@ -50,7 +53,13 @@ const ToDoList = () => {
       </section>
       <section className="form-container">
         <label htmlFor="taskInput">Insert task</label>
-        <input type="text" id="taskInput" placeholder="Insert Task" />
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Insert Task"
+          value={newTask}
+          onChange={(e) => setNewTask(e.target.value)} // Update state
+        />
         <button type="button" onClick={handleAddTask}>
           Add task
         </button>

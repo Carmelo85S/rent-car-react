@@ -8,11 +8,8 @@ import {
 } from '../assets/cabriolet/index';
 import Title from '../components/Title';
 import Cabriolet from '../components/Car-card';
-
-//import style for the page
 import '../index.css';
 
-//Create an objects array with all cars info
 const cabriolet = () => {
   const cabriolets = [
     { img: AstonMartin, title: "Aston Martin", info: "12000 SEK per day" },
@@ -23,18 +20,12 @@ const cabriolet = () => {
     { img: Maserati, title: "Maserati", info: "12000 SEK per day" }
   ];
 
-  //return the page
   return (
-
-    // wrapper = full size of the page, serving as the container for the entire content
     <div className="wrapper">
-      {/* Title component displaying the title "Cabriolet" */}
       <Title title="Cabriolet"/>
       
-      {/* card-container = container for the list of Cabriolet cards */}
       <div className="card-container">
         
-        {/* Iterating through the 'cabriolets' array to create a Cabriolet component for each car, pass the info as props */}
         {cabriolets.map((car, index) => (
           <Cabriolet 
             key={index}
