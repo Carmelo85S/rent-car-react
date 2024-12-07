@@ -20,6 +20,7 @@ import MonthlySub from './pages/MonthlySub';
 import ContactInfo from './pages/ContactInfo';
 import ToDoList from './pages/ToDoList';
 import ScrollTop from './components/ScrollTop';
+import Aston from './pages/car-details/cabriolet/Aston';
 
 const App = () => { 
   return (
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/cabriolet" element={<Cabriolet />} />
+          <Route path="/aston" element={<Aston />} />
           <Route path="/performance" element={<Performance />} />
           <Route path="/suv" element={<Suv />} />
           <Route path="/sedan" element={<Sedan />} />

@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
 import '../style/car-gallery/card-gallery.css';
 
 const Car = (props) => {
+    
     return(
         <div className="card-wrapper">
             <section className="card-container">
@@ -10,7 +12,9 @@ const Car = (props) => {
                         <h2 className="card-title">{props.title}</h2>
                         <p className="card-info">{props.info}</p>
                     </section>
-                    <button className="rentBtn">Rent now</button>
+                    <Link className="rentBtn" to={props.link}>
+                    Rent now
+                    </Link>
                 </section>
             </section>
         </div>

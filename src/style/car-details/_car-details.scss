@@ -1,0 +1,43 @@
+@use '../../style/variable/font';
+@use '../../style/variable/color';
+@import '../../style/mixin/mixin';
+
+
+.wrapper{
+    @include wrapper;
+
+    .hero-details{
+        @include container;
+        min-height: 400px;
+        @include flexbox(space-around, center, row, wrap);
+        border: 1px solid black;
+        box-shadow: 2px 2px 20px black;
+        border-radius:4px;
+
+        .info-container{
+            max-width: 600px;
+            width: 100%;
+            min-height: 300px;
+            border-radius:3px;
+    
+            .info{
+                max-width: 600px;
+                min-height: 100px;
+                width: 100%;
+                @include info;
+                text-align: justify;
+            }
+        }
+    
+        .img-container{
+            max-width: 600px;
+            min-height: 300px;
+            width: 100%;
+    
+            img{
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}

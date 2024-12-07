@@ -49,13 +49,16 @@
 
 @mixin rentBtn{
     padding:15px 40px;
-    border-radius: 20px;
-    border:0px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
     color: color.$textPrimary;
     background-color: color.$bgBtn;
+    border: 2px solid color.$textGolden;
+    font-family: font.$primary;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    text-transform: uppercase;
     box-shadow: 5px 5px 10px rgb(80, 79, 79);
     cursor: pointer;
     transition: all 0.1s ease-in;
