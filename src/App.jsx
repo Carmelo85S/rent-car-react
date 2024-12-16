@@ -21,6 +21,11 @@ import ContactInfo from './pages/ContactInfo';
 import ToDoList from './pages/ToDoList';
 import ScrollTop from './components/ScrollTop';
 import Aston from './pages/car-details/cabriolet/Aston';
+import Bmws8 from './pages/car-details/cabriolet/Bmws8';
+import Bmwz4 from './pages/car-details/cabriolet/Bmwz4';
+import Maserati from './pages/car-details/cabriolet/Maserati';
+import Porsche from './pages/car-details/cabriolet/porsche';
+import Mustang from './pages/car-details/cabriolet/Mustang';
 
 const App = () => { 
   return (
@@ -36,6 +41,11 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/cabriolet" element={<Cabriolet />} />
           <Route path="/aston" element={<Aston />} />
+          <Route path="/porsche" element={<Porsche />} />
+          <Route path="/maserati" element={<Maserati />} />
+          <Route path="/mustang" element={<Mustang />} />
+          <Route path="/bmwz4" element={<Bmwz4 />} />
+          <Route path="/bmws8" element={<Bmws8 />} />
           <Route path="/performance" element={<Performance />} />
           <Route path="/suv" element={<Suv />} />
           <Route path="/sedan" element={<Sedan />} />
