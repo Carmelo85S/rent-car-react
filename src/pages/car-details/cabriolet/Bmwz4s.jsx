@@ -1,34 +1,38 @@
-import BmwS8 from '../../../assets/cabriolet/bmws8/bmw-8-serie.webp';
-import Bmws8_1 from '../../../assets/cabriolet/bmws8/bmw-8-serie-back.webp';
-import Bmws8_2 from '../../../assets/cabriolet/bmws8/bmw-8-serie-front.webp';
-import Bmws8_3 from '../../../assets/cabriolet/bmws8/bmw-8-serie-intern.webp';
-import Bmws8_4 from '../../../assets/cabriolet/bmws8/bmw-8-serie-top.webp';
-import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import '../../../style/car-details/car-details.css';
+import FormBooking from '../../../components/FormBooking'
+import Bmwz4_hero from '../../../assets/cabriolet/bmwz4/bmw-z4.webp'
+import Bmwz4_1 from '../../../assets/cabriolet/bmwz4/bmw-z4-back.webp'
+import Bmwz4_2 from '../../../assets/cabriolet/bmwz4/bmw-z4-intern-front-1.webp'
+import Bmwz4_3 from '../../../assets/cabriolet/bmwz4/bmw-z4-intern-front.webp'
+import Bmwz4_4 from '../../../assets/cabriolet/bmwz4/bmw-z4-on-road.webp'
+import '../../../style/car-details/car-details.css'
 
-const Bmws8 = () => {
+const Bmwz4s = () => {
     return (
         <>
             <div className='wrapper'>
                 <section className="title-container">
-                    <Title title="BMW S8 Cabriolet" />
+                    <Title title="BMW z4 Cabriolet" />
                 </section>
 
                 {/* Hero Section */}
                 <section className="hero-details">
                     <section className="info-container">
                         <p className="info">
-                            Discover the ultimate combination of luxury and performance with the BMW S8 Cabriolet. 
-                            Powered by a 4.4L V8 Twin-Turbocharged engine delivering 523 horsepower, this convertible 
-                            accelerates from 0 to 100 km/h in just 4.1 seconds. With its sleek design, advanced technology, 
-                            and refined interior, the BMW S8 offers an unparalleled driving experience. Book today to enjoy 
-                            the open road like never before.
+                        Experience the perfect fusion of luxury and performance with the BMW Z4.
+                        Powered by a 2.0L or 3.0L turbocharged engine, the Z4 offers exhilarating 
+                        performance with up to 382 horsepower and a 0-100 km/h time of just 4.3 seconds. 
+                        This roadster combines precision handling with a sleek, dynamic design that’s built to captivate.
+                         Inside, the BMW Z4 features a premium interior equipped with cutting-edge 
+                         technology and comfort, ensuring a refined driving experience. 
+                         Whether you’re enjoying a scenic drive or pushing the limits on the track, 
+                         the BMW Z4 delivers the ultimate in speed, style, and sophistication. 
+                         Book your test drive today and feel the thrill of the open road.
                         </p>
                     </section>
 
                     <section className="img-container">
-                        <img src={BmwS8} alt="BMW S8 Cabriolet front view" />
+                        <img src={Bmwz4_hero} alt="BMW Z4 on the road" />
                     </section>
                 </section> 
             </div>
@@ -37,10 +41,10 @@ const Bmws8 = () => {
             <section className="img-info-wrapper">
                 <section className="car-spec-container">
                     <section className="img-container">
-                        <img src={Bmws8_1} alt="BMW S8 Cabriolet back view" />
-                        <img src={Bmws8_2} alt="BMW S8 Cabriolet front view" />
-                        <img src={Bmws8_3} alt="BMW S8 Cabriolet interior" />
-                        <img src={Bmws8_4} alt="BMW S8 Cabriolet top view" />
+                        <img src={Bmwz4_1} alt="BMW Z4 Cabriolet back view" />
+                        <img src={Bmwz4_2} alt="BMW Z4 Cabriolet interior front view" />
+                        <img src={Bmwz4_3} alt="BMW Z4 Cabriolet interior front" />
+                        <img src={Bmwz4_4} alt="BMW Z4 Cabriolet driving" />
                     </section>
 
                     <section className="info-container">
@@ -61,16 +65,16 @@ const Bmws8 = () => {
             <section className="video-container">
                 <div className="video-wrapper">
                 <iframe 
-                    src="https://www.youtube.com/embed/NDeTFbI_fkM" 
+                    src="https://www.youtube.com/embed/KvOn8EDpBlY" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                     allowFullScreen
-                    title="BMW S8 Cabriolet Video"
+                    title="BMW Z4 Cabriolet Video"
                 ></iframe>
 
                 </div>
                 <section className="cta-container">
-                    <h2>Ready to Experience the BMW S8 Cabriolet?</h2>
+                    <h2>Ready to Experience the BMW Z4 Cabriolet?</h2>
                 </section>
             </section>
 
@@ -80,11 +84,11 @@ const Bmws8 = () => {
 
             {/* Call-to-Action Section */}
             <section className="cta-section">
-                <h3>Don't Miss Out on the BMW S8 Cabriolet Experience!</h3>
+                <h3>Don't Miss Out on the BMW Z4 Cabriolet Experience!</h3>
                 <p>Book now to secure your BMW S8 Cabriolet for your next adventure. Availability is limited!</p>
             </section>
         </>
     );
-};
+}
 
-export default Bmws8;
+export default Bmwz4s
