@@ -7,6 +7,12 @@ import Bmwz4s from './pages/car-details/cabriolet/Bmwz4s';
 import PorscheTurbo from './pages/car-details/cabriolet/Porsche';
 import Mustang from './pages/car-details/cabriolet/Mustang';
 import Performance from './pages/Performance';
+import AstonP from './pages/car-details/performance/AstonP';
+import Bugatti from './pages/car-details/performance/Bugatti';
+import Ferrari from './pages/car-details/performance/Ferrari';
+import LamborghiniHuracan from './pages/car-details/performance/lamborghiniHuracan';
+import Koenigssegg from './pages/car-details/performance/Koenigssegg';
+import McLaren from './pages/car-details/performance/McLaren';
 import Suv from './pages/Suv';
 import Sedan from './pages/Sedan';
 import Chaffeur from './pages/Chauffeur';
@@ -29,6 +35,12 @@ export const redirect = [
   { path: "/bmwz4s", element: <Bmwz4s /> },
   { path: "/bmws8", element: <Bmws8 /> },
   { path: "/performance", element: <Performance /> },
+  { path: "/aston-p", element: <AstonP /> },
+  { path: "/bugatti", element: <Bugatti /> },
+  { path: "/ferrari", element: <Ferrari /> },
+  { path: "/lamborghini", element: <LamborghiniHuracan /> },
+  { path: "/mclaren", element: <McLaren /> },
+  { path: "/koenigsegg", element: <Koenigssegg /> },
   { path: "/suv", element: <Suv /> },
   { path: "/sedan", element: <Sedan /> },
   { path: "/chauffeur", element: <Chaffeur /> },

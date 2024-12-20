@@ -85,7 +85,7 @@ const Bmwz4s = () => {
             {/* Call-to-Action Section */}
             <section className="cta-section">
                 <h3>Don't Miss Out on the BMW Z4 Cabriolet Experience!</h3>
-                <p>Book now to secure your BMW S8 Cabriolet for your next adventure. Availability is limited!</p>
+                <p>Book now to secure your BMW Z4 Cabriolet for your next adventure. Availability is limited!</p>
             </section>
         </>
     );

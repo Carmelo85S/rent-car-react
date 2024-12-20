@@ -15,12 +15,12 @@ import {
   //Create an objects array with all cars info
   const performance = () => {
     const perform = [
-      { img: AstonMartin, title: "Aston Martin", info: "12000 SEK per day" },
-      { img: Bugatti, title: "Bugatti Chiron", info: "1800 SEK per day" },
-      { img: Ferrari, title: "Ferrari 488", info: "3400 SEK per day" },
-      { img: Koenigsegg, title: "Koenigsegg Jesko", info: "10200 SEK per day" },
-      { img: McLaren, title: "McLaren 720S", info: "12000 SEK per day" },
-      { img: Lamborghini, title: "Lamborghini Huracán Evo", info: "12000 SEK per day" }
+      { img: AstonMartin, title: "Aston Martin", info: "12000 SEK per day", link: "/aston-p" },
+      { img: Bugatti, title: "Bugatti Chiron", info: "1800 SEK per day", link: "/bugatti" },
+      { img: Ferrari, title: "Ferrari 488", info: "3400 SEK per day", link: "/ferrari" },
+      { img: Koenigsegg, title: "Koenigsegg Jesko", info: "10200 SEK per day", link: "/koenigsegg" },
+      { img: McLaren, title: "McLaren 720S", info: "12000 SEK per day", link: "/mclaren" },
+      { img: Lamborghini, title: "Lamborghini Huracán Evo", info: "12000 SEK per day", link:"/lamborghini" }
     ];
     
     //return the page
@@ -41,6 +41,7 @@ import {
               img={car.img} 
               title={car.title}
               info={car.info}
+              link={car.link}
             />
           ))}
         </div>

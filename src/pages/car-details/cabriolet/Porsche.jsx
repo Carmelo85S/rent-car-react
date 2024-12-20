@@ -5,6 +5,7 @@ import Porsche911_1 from '../../../assets/cabriolet/porsche911/porsche-911-inter
 import Porsche911_2 from '../../../assets/cabriolet/porsche911/porsche-911-intern.webp';
 import Porsche911_3 from '../../../assets/cabriolet/porsche911/porsche-911-on-the-road.webp';
 import Porsche911_4 from '../../../assets/cabriolet/porsche911/porsche-911-top.webp';
+import '../../../style/car-details/car-details.css';
 
 const PorscheTurbo = () => {
     return (

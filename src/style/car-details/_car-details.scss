@@ -44,7 +44,6 @@
 .img-info-wrapper {
     @include wrapper;
     background-color: color.$bgWrapperDark;
-    border: 1px solid yellow;
 
     .car-spec-container {
         @include container;
