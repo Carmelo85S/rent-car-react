@@ -1,6 +1,6 @@
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Porsche911 from '../../../assets/car-details/cabriolet/porsche/porsche-911.webp';
+import Porsche911 from '../../../assets/cabriolet/porsche911/porsche911turbo.webp';
 import Porsche911_1 from '../../../assets/cabriolet/porsche911/porsche-911-intern-front.webp';
 import Porsche911_2 from '../../../assets/cabriolet/porsche911/porsche-911-intern.webp';
 import Porsche911_3 from '../../../assets/cabriolet/porsche911/porsche-911-on-the-road.webp';

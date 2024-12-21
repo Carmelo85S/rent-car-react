@@ -1,4 +1,4 @@
-import AstonHero from '../../../assets/car-details/cabriolet/aston-martin/aston-martin-booking-front-grid.webp';
+import AstonHero from '../../../assets/cabriolet/aston-martin-booking-front-grid.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
 import Aston1 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern-front.webp';

@@ -15,12 +15,12 @@ import '../index.css';
 //Create an objects array with all cars info
 const suv = () => {
   const suvAuto = [
-    { img: AudiQ8, title: "Audi Q8", info: "12000 SEK per day" },
-    { img: BmwX7, title: "BMW X7", info: "1800 SEK per day" },
-    { img: Cadillac, title: "Cadillac Escalade", info: "2000 SEK per day" },
-    { img: LexusLx, title: "Lexus LX", info: "1000 SEK per day" },
-    { img: MercedesG, title: "Mercedes G-Class", info: "1200 SEK per day" },
-    { img: RangeRover, title: "Range Rover", info: "12000 SEK per day" }
+    { img: AudiQ8, title: "Audi Q8", info: "12000 SEK per day", link:"/audi-q8" },
+    { img: BmwX7, title: "BMW X7", info: "1800 SEK per day", link:"/bmw-x7" },
+    { img: Cadillac, title: "Cadillac Escalade", info: "2000 SEK per day", link:"/cadillac-escalade" },
+    { img: LexusLx, title: "Lexus LX", info: "1000 SEK per day", link:"/lexus-lx" },
+    { img: MercedesG, title: "Mercedes G-Class", info: "1200 SEK per day", link:"/mercedes-class-g" },
+    { img: RangeRover, title: "Range Rover", info: "12000 SEK per day", link:"/range-rover" }
   ];  
 
   //return the page
@@ -41,6 +41,7 @@ const suv = () => {
             img={car.img} 
             title={car.title}
             info={car.info}
+            link={car.link}
           />
         ))}
       </div>
