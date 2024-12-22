@@ -55,3 +55,39 @@
         }
     }
 }
+
+@media screen and (min-width: 320px) and (max-width:500px){
+    .wrapper{
+    
+        .card-container{
+    
+            .card{
+                @include dimension(320px, auto);
+                img{
+                    width: 300px;
+                    border-radius: 4px;
+                }
+        
+                .text-container{
+                    @include dimension(200px, 50px);
+                    @include flexbox(space-between, center, column);
+        
+                    .card-title{
+                        @include font-car-model;
+                    }
+        
+                    .card-info{
+                        @include font-car-info;
+                    }
+                }
+        
+                .rentBtn{
+                    @include rentBtn;
+                    color: color.$textPrimary;
+                    background-color: color.$bgBtn;
+        
+                }
+            }
+        }
+    }
+}

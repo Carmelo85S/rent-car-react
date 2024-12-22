@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Performance from '../../assets/home/performance.webp';
+import Speed from '../../assets/home/speed.webp';
 import Cabriolet from '../../assets/home/cabriolet.webp';
 import Suv from '../../assets/home/suv.webp';
 import Sedan from '../../assets/home/sedan.webp';
@@ -21,7 +21,7 @@ const HeroHome = () => {
                 </p>
             </section>
             <section className="car-category-container">
-                <Link to="/performance"><img className="fade-in" src={Performance} alt="sport car category" /></Link>
+                <Link to="/speed"><img className="fade-in" src={Speed} alt="sport car category" /></Link>
                 <Link to="/cabriolet"><img className="fade-in" src={Cabriolet} alt="cabriolet car category" /></Link>
                 <Link to="suv"><img className="fade-in" src={Suv} alt="suv car category" /></Link>
                 <Link to="sedan"><img className="fade-in" src={Sedan} alt="sadan car category" /></Link>

@@ -1,10 +1,10 @@
-import LamborghiniHero from '../../../assets/performance/lamborghini-huracan/lamborghini-on-the-road.webp';
+import LamborghiniHero from '../../../assets/speed/lamborghini-huracan/lamborghini-on-the-road.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Lamborghini_1 from '../../../assets/performance/lamborghini-huracan/lamborghini-intern-front.webp';
-import Lamborghini_2 from '../../../assets/performance/lamborghini-huracan/lamborghini-yellow.webp';
-import Lamborghini_3 from '../../../assets/performance/lamborghini-huracan/lamborghini-top.webp';
-import Lamborghini_4 from '../../../assets/performance/lamborghini-huracan/lamborghini-back.webp';
+import Lamborghini_1 from '../../../assets/speed/lamborghini-huracan/lamborghini-intern-front.webp';
+import Lamborghini_2 from '../../../assets/speed/lamborghini-huracan/lamborghini-yellow.webp';
+import Lamborghini_3 from '../../../assets/speed/lamborghini-huracan/lamborghini-top.webp';
+import Lamborghini_4 from '../../../assets/speed/lamborghini-huracan/lamborghini-back.webp';
 
 import '../../../style/car-details/car-details.css'
 

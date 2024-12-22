@@ -1,10 +1,10 @@
-import KoenigsseggHero from '../../../assets/performance/koenigsegg/koenigsegg-hero.webp';
+import KoenigsseggHero from '../../../assets/speed/koenigsegg/koenigsegg-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Koenigssegg_1 from '../../../assets/performance/koenigsegg/koenigsegg-front-interior2.webp';
-import Koenigssegg_2 from '../../../assets/performance/koenigsegg/koenigsegg-front-interior.webp';
-import Koenigssegg_3 from '../../../assets/performance/koenigsegg/koenigsegg-back.webp';
-import Koenigssegg_4 from '../../../assets/performance/koenigsegg/koenigsegg-back-wing.webp';
+import Koenigssegg_1 from '../../../assets/speed/koenigsegg/koenigsegg-front-interior2.webp';
+import Koenigssegg_2 from '../../../assets/speed/koenigsegg/koenigsegg-front-interior.webp';
+import Koenigssegg_3 from '../../../assets/speed/koenigsegg/koenigsegg-back.webp';
+import Koenigssegg_4 from '../../../assets/speed/koenigsegg/koenigsegg-back-wing.webp';
 
 import '../../../style/car-details/car-details.css'
 

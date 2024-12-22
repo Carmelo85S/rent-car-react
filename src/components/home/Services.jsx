@@ -66,7 +66,7 @@ const Services = () => {
     return(
         <div className="wrapper-services">
             <section className="title-container">
-                <h1 className="title">Meet our team</h1>
+                <h1 className="title">Explore our services</h1>
             </section>
                 <div className="services-card-container">
                 {servicesData.map((service, index) =>

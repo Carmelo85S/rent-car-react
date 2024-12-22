@@ -9,7 +9,6 @@ const Navbar = () => {
         setIsNavOpen(!isNavOpen);
     };
 
-    // Function to close the navbar when a link is clicked
     const closeNav = () => {
         setIsNavOpen(false);
     };
@@ -37,13 +36,13 @@ const Navbar = () => {
                     
                     {/* Vehicles Dropdown */}
                     <li className='dropdown'>
-                        <Link className="dropbtn" to="/" onClick={closeNav}>VEHICLE</Link>
-                        <ul className="dropdown-content">
+                        <Link className="dropbtn" to="/vehicle" onClick={closeNav}>VEHICLE</Link>
+                        <ul className="dropdown-content-vehicle">
                             <li>
                                 <Link className="droplink" to="/cabriolet" onClick={closeNav}>CABRIOLET</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/performance" onClick={closeNav}>PERFORMANCE</Link>
+                                <Link className="droplink" to="/speed" onClick={closeNav}>SPEED</Link>
                             </li>
                             <li>
                                 <Link className="droplink" to="/suv" onClick={closeNav}>SUV</Link>
@@ -56,7 +55,7 @@ const Navbar = () => {
                     
                     {/* Services Dropdown */}
                     <li className='dropdown'>
-                        <Link className="dropbtn" to="/" onClick={closeNav}>SERVICE</Link>
+                        <Link className="dropbtn" to="/service" onClick={closeNav}>SERVICE</Link>
                         <ul className="dropdown-content-service">
                             <li>
                                 <Link className="droplink" to="/monthly-sub" onClick={closeNav}>MONTHLY SUB</Link>

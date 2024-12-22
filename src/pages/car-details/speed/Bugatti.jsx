@@ -1,19 +1,19 @@
-import AstonVanquish from '../../../assets/performance/aston/aston-vanquish.webp';
+import BugattiHero from '../../../assets/speed/bugatti/bugatti-white.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Aston1 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern-front.webp';
-import Aston2 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern.webp';
-import Aston3 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-seat.webp';
-import Aston4 from '../../../assets/cabriolet/aston-martin/aston-martin-booking.webp';
+import Bugatti_1 from '../../../assets/speed/bugatti/bugatti-stirr-wheel.webp';
+import Bugatti_2 from '../../../assets/speed/bugatti/bugatti-intern.webp';
+import Bugatti_3 from '../../../assets/speed/bugatti/bugatti-intern-black.webp';
+import Bugatti_4 from '../../../assets/speed/bugatti/bugatti-back.webp';
 
 import '../../../style/car-details/car-details.css'
 
-const AstonP = () => {
+const Bugatti = () => {
   return (
     <>
     <div className='wrapper'>
         <section className="title-container">
-            <Title title="Aston Martin Vanquish" />
+            <Title title="Bugatti Chiron" />
         </section>
         <section className="hero-details">
             <section className="info-container">
@@ -29,28 +29,28 @@ const AstonP = () => {
                 </p>
             </section>
             <section className="img-container">
-                <img src={AstonVanquish} alt="Black Aston martin Vansquish on the road" />
+                <img src={BugattiHero} alt="A white bugatti" />
             </section>
         </section> 
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
             <section className="img-container">
-                <img src={Aston1} alt="intern front seat" />
-                <img src={Aston2} alt="interior screen" />
-                <img src={Aston3} alt="seat" />
-                <img src={Aston4} alt="top view" />
+                <img src={Bugatti_1} alt="Bugatti stirrting wheel" />
+                <img src={Bugatti_2} alt="Bugatti interior" />
+                <img src={Bugatti_3} alt="Bugatti black interior" />
+                <img src={Bugatti_4} alt="Bugatti back view" />
             </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
-                <ul>
-                    <li><strong>Engine:</strong> 5.2L V12 Twin-Turbocharged</li>
-                    <li><strong>Horsepower:</strong> 824 hp</li>
-                    <li><strong>0-100 km/h:</strong> 3.2 seconds</li>
-                    <li><strong>Transmission:</strong> 8-speed automatic</li>
-                    <li><strong>Top Speed:</strong> 344 km/h</li>
-                    <li><strong>Price:</strong> Approximately £300,000</li>
-                </ul>
+            <ul>
+                <li><strong>Engine:</strong> 8.0L Quad-Turbocharged W16</li>
+                <li><strong>Horsepower:</strong> 1,500 hp</li>
+                <li><strong>0-100 km/h:</strong> 2.4 seconds</li>
+                <li><strong>Transmission:</strong> 7-speed dual-clutch automatic</li>
+                <li><strong>Top Speed:</strong> Electronically limited to 420 km/h</li>
+                <li><strong>Price:</strong> Approximately £2.6 million</li>
+            </ul>
             </section>
         </section>
     </section>
@@ -58,26 +58,26 @@ const AstonP = () => {
     <section className="video-container">
         <div className="video-wrapper">
             <iframe 
-                src="https://www.youtube.com/embed/ttovshZgIC0" 
+                src="https://www.youtube.com/embed/wO6jaDmJLog" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
-                title="Aston Martin Vanquish Video"
+                title="Bugatti Chiron Video"
             ></iframe>
         </div>
         <section className="cta-container">
-            <h2>Ready to Experience Aston Martin?</h2>
+            <h2>Ready to Experience Bugatti Chiron?</h2>
         </section>
     </section>
 
     <FormBooking />
 
     <section className="cta-section">
-        <h3>Don't Miss Out on the Aston Martin Experience!</h3>
-        <p>Book now to secure your Aston Martin Vanquish for your next adventure. Availability is limited!</p>
+        <h3>Don't Miss Out on the Bugatti Chiron Experience!</h3>
+        <p>Book now to secure your Bugatti Chiron for your next adventure. Availability is limited!</p>
     </section>
     </>
   )
 }
 
-export default AstonP
+export default Bugatti

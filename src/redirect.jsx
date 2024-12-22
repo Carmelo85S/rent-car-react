@@ -1,18 +1,20 @@
 import Home from './pages/Home';
 import About from './pages/About';
+import Vehicle from './pages/Vehicle';
+import ServicesPage from './pages/Services-page';
 import Cabriolet from './pages/Cabriolet';
 import Aston from './pages/car-details/cabriolet/Aston';
 import Bmws8 from './pages/car-details/cabriolet/Bmws8';
 import Bmwz4s from './pages/car-details/cabriolet/Bmwz4s';
 import PorscheTurbo from './pages/car-details/cabriolet/Porsche';
 import Mustang from './pages/car-details/cabriolet/Mustang';
-import Performance from './pages/Performance';
-import AstonP from './pages/car-details/performance/AstonP';
-import Bugatti from './pages/car-details/performance/Bugatti';
-import Ferrari from './pages/car-details/performance/Ferrari';
-import LamborghiniHuracan from './pages/car-details/performance/lamborghiniHuracan';
-import Koenigssegg from './pages/car-details/performance/Koenigssegg';
-import McLaren from './pages/car-details/performance/McLaren';
+import SpeedCat from './pages/Speed';
+import AstonP from './pages/car-details/speed/AstonP';
+import Bugatti from './pages/car-details/speed/Bugatti';
+import Ferrari from './pages/car-details/speed/Ferrari';
+import LamborghiniHuracan from './pages/car-details/speed/lamborghiniHuracan';
+import Koenigssegg from './pages/car-details/speed/Koenigssegg';
+import McLaren from './pages/car-details/speed/McLaren';
 import Suv from './pages/Suv';
 import AudiQ8 from './pages/car-details/suv/AudiQ8';
 import RangeRover from './pages/car-details/suv/RangeRover';
@@ -40,13 +42,15 @@ import ContactInfo from './pages/ContactInfo';
 export const redirect = [
   { path: "/", element: <Home /> },
   { path: "/about", element: <About /> },
+  { path: "/vehicle", element: <Vehicle /> },
+  { path: "/service", element: <ServicesPage /> },
   { path: "/cabriolet", element: <Cabriolet /> },
   { path: "/aston", element: <Aston /> },
   { path: "/porsche", element: <PorscheTurbo /> },
   { path: "/mustang", element: <Mustang /> },
   { path: "/bmwz4s", element: <Bmwz4s /> },
   { path: "/bmws8", element: <Bmws8 /> },
-  { path: "/performance", element: <Performance /> },
+  { path: "/speed", element: <SpeedCat /> },
   { path: "/aston-p", element: <AstonP /> },
   { path: "/bugatti", element: <Bugatti /> },
   { path: "/ferrari", element: <Ferrari /> },

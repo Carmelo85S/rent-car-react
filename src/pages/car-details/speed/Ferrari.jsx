@@ -1,10 +1,10 @@
-import FerrariHero from '../../../assets/performance/ferrari/ferrari-488-hero.webp';
+import FerrariHero from '../../../assets/speed/ferrari/ferrari-488-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Ferrari_1 from '../../../assets/performance/ferrari/ferrari-488-stirr-wheel.webp';
-import Ferrari_2 from '../../../assets/performance/ferrari/ferrari-488-intern.webp';
-import Ferrari_3 from '../../../assets/performance/ferrari/ferrari-488-top.webp';
-import Ferrari_4 from '../../../assets/performance/ferrari/ferrari-488-back.webp';
+import Ferrari_1 from '../../../assets/speed/ferrari/ferrari-488-stirr-wheel.webp';
+import Ferrari_2 from '../../../assets/speed/ferrari/ferrari-488-intern.webp';
+import Ferrari_3 from '../../../assets/speed/ferrari/ferrari-488-top.webp';
+import Ferrari_4 from '../../../assets/speed/ferrari/ferrari-488-back.webp';
 
 import '../../../style/car-details/car-details.css'
 

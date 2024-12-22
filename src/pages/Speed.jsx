@@ -5,15 +5,15 @@ import {
     Koenigsegg, 
     McLaren, 
     Lamborghini 
-  } from '../assets/performance/index';
+  } from '../assets/speed/index';
   import Title from '../components/Title';
-  import Performance from '../components/Car-card';
+  import Speed from '../components/Car-card';
   
   //import style for the page
   import '../index.css';
   
   //Create an objects array with all cars info
-  const performance = () => {
+  const SpeedCat = () => {
     const perform = [
       { img: AstonMartin, title: "Aston Martin", info: "12000 SEK per day", link: "/aston-p" },
       { img: Bugatti, title: "Bugatti Chiron", info: "1800 SEK per day", link: "/bugatti" },
@@ -29,14 +29,14 @@ import {
       // wrapper = full size of the page, serving as the container for the entire content
       <div className="wrapper">
         {/* Title component displaying the title "Performance" */}
-        <Title title="Performance"/>
+        <Title title="Speed"/>
         
         {/* card-container = container for the list of Performance cards */}
         <div className="card-container">
           
           {/* Iterating through the 'performances' array to create a Performance component for each car, pass the info as props */}
           {perform.map((car, index) => (
-            <Performance 
+            <Speed 
               key={index}
               img={car.img} 
               title={car.title}
@@ -49,5 +49,5 @@ import {
     );
   }
   
-  export default performance;
+  export default SpeedCat;
   
