@@ -1,10 +1,10 @@
-import AstonVanquish from '../../../assets/performance/aston/aston-vanquish.webp';
+import CadillacEscaladeHero from '../../../assets/suv/cadillac-escalade/cadillac-escalade-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Aston1 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern-front.webp';
-import Aston2 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern.webp';
-import Aston3 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-seat.webp';
-import Aston4 from '../../../assets/cabriolet/aston-martin/aston-martin-booking.webp';
+import Cadillac_1 from '../../../assets/suv/cadillac-escalade/cadillac-escalade-back-view.webp';
+import Cadillac_2 from '../../../assets/suv/cadillac-escalade/cadillac-escalade-drive.webp';
+import Cadillac_3 from '../../../assets/suv/cadillac-escalade/cadillac-escalade-front-interior.webp';
+import Cadillac_4 from '../../../assets/suv/cadillac-escalade/cadillac-escalade-front.webp';
 
 import '../../../style/car-details/car-details.css'
 
@@ -30,27 +30,27 @@ const CadillacEscalade = () => {
             </p>
         </section>
             <section className="img-container">
-                <img src={AstonVanquish} alt="Black Aston martin Vansquish on the road" />
+                <img src={CadillacEscaladeHero} alt="Black Aston martin Vansquish on the road" />
             </section>
         </section> 
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
             <section className="img-container">
-                <img src={Aston1} alt="intern front seat" />
-                <img src={Aston2} alt="interior screen" />
-                <img src={Aston3} alt="seat" />
-                <img src={Aston4} alt="top view" />
+                <img src={Cadillac_1} alt="cadillac escalade back view" />
+                <img src={Cadillac_2} alt="cadillac escalade drive" />
+                <img src={Cadillac_3} alt="cadillac escalae front" />
+                <img src={Cadillac_4} alt="cadillac escalae front view" />
             </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
                 <ul>
-                    <li><strong>Engine:</strong> 5.2L V12 Twin-Turbocharged</li>
-                    <li><strong>Horsepower:</strong> 824 hp</li>
-                    <li><strong>0-100 km/h:</strong> 3.2 seconds</li>
-                    <li><strong>Transmission:</strong> 8-speed automatic</li>
-                    <li><strong>Top Speed:</strong> 344 km/h</li>
-                    <li><strong>Price:</strong> Approximately £300,000</li>
+                    <li><strong>Engine:</strong> 6.2L V8</li>
+                    <li><strong>Horsepower:</strong> 420 hp</li>
+                    <li><strong>0-100 km/h:</strong> 6.1 seconds</li>
+                    <li><strong>Transmission:</strong> 10-speed automatic</li>
+                    <li><strong>Top Speed:</strong> 180 km/h</li>
+                    <li><strong>Price:</strong> Approximately $80,000</li>
                 </ul>
             </section>
         </section>

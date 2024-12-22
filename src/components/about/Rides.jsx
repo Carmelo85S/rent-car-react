@@ -3,13 +3,13 @@ import '../../style/about/rides/rides.css';
 
 const Rides = () => {
   return (
-    <div class="content-wrapper">
+    <div className="content-wrapper">
         <section className="title-container">
                 <h1 className="title">Unforgettable Rides</h1>
         </section>
-        <section class="content-container">
-            <section class="info-container">
-                <p class="info">
+        <section className="content-container">
+            <section className="info-container">
+                <p className="info">
                     Welcome to Ride<span>Ready</span>, where luxury meets the art of travel. 
                     We take pride in offering a carefully curated selection of the world’s most exclusive, 
                     high-performance vehicles, crafted to elevate your driving experience to new heights. 
@@ -17,7 +17,7 @@ const Rides = () => {
                     and cutting-edge technology, ensuring that each journey becomes not only a drive but a 
                     memorable experience.
                 </p>
-                <p class="info">
+                <p className="info">
                     At Ride<span>Ready</span>, we believe that true luxury lies in the details, 
                     which is why our mission is to make every rental an extraordinary journey. 
                     Our team of dedicated professionals strives to exceed expectations, providing 
@@ -27,12 +27,12 @@ const Rides = () => {
                     excellence ensures that your experience with us is smooth, sophisticated, 
                     and truly unforgettable.
                 </p>
-                <p class="info">
+                <p className="info">
                     Experience the art of luxury driving with Ride<span>Ready</span> — where every mile, 
                     every moment, and every vehicle is designed to inspire.
                 </p>
             </section>
-            <section class="image-container">
+            <section className="image-container">
                 <img src={Chief} alt="Financial chief talking at the phone" />
             </section>
         </section>

@@ -21,6 +21,12 @@ import LexusLx from './pages/car-details/suv/LexusLX';
 import CadillacEscalade from './pages/car-details/suv/CadillacEscalade';
 import BmwX7 from './pages/car-details/suv/BmwX7';
 import Sedan from './pages/Sedan';
+import MercedesS from './pages/car-details/sedan/MercedesS';
+import AudiA8 from './pages/car-details/sedan/AudiA8';
+import BmwS7 from './pages/car-details/sedan/BmwS7';
+import GenesisG80 from './pages/car-details/sedan/GenesisG80';
+import JaguarXJ from './pages/car-details/sedan/JaguarXj';
+import LexusLs from './pages/car-details/sedan/LexusLs';
 import Chaffeur from './pages/Chauffeur';
 import ShortTerm from './pages/ShortTerm';
 import LongTerm from './pages/LongTerm';
@@ -54,6 +60,13 @@ export const redirect = [
   { path: "/cadillac-escalade", element: <CadillacEscalade /> },
   { path: "/lexus-lx", element: <LexusLx /> },
   { path: "/mercedes-class-g", element: <MercedesG /> },
+  { path: "/sedan", element: <Sedan /> },
+  { path: "/audi-a8", element: <AudiA8 /> },
+  { path: "/bmw-s7", element: <BmwS7 /> },
+  { path: "/genesis-g80", element: <GenesisG80 /> },
+  { path: "/jaguar-xj", element: <JaguarXJ /> },
+  { path: "/lexus-ls", element: <LexusLs /> },
+  { path: "/mercedes-class-s", element:<MercedesS /> },
   { path: "/chauffeur", element: <Chaffeur /> },
   { path: "/monthly-sub", element: <MonthlySub /> },
   { path: "/long-term", element: <LongTerm /> },

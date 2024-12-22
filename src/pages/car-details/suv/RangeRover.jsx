@@ -1,10 +1,10 @@
-import AstonVanquish from '../../../assets/performance/aston/aston-vanquish.webp';
+import RangeRoverHero from '../../../assets/suv/range-rover/range-rover-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Aston1 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern-front.webp';
-import Aston2 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern.webp';
-import Aston3 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-seat.webp';
-import Aston4 from '../../../assets/cabriolet/aston-martin/aston-martin-booking.webp';
+import RangeRover_1 from '../../../assets/suv/range-rover/range-rover-seats.webp';
+import RangeRover_2 from '../../../assets/suv/range-rover/range-rover-front-interior.webp';
+import RangeRover_3 from '../../../assets/suv/range-rover/range-rover-door.webp';
+import RangeRover_4 from '../../../assets/suv/range-rover/range-rover-back-seat.webp';
 
 import '../../../style/car-details/car-details.css'
 
@@ -30,17 +30,17 @@ const RangeRover = () => {
             </p>
         </section>
             <section className="img-container">
-                <img src={AstonVanquish} alt="Black Aston martin Vansquish on the road" />
+                <img src={RangeRoverHero} alt="Range rover on the road" />
             </section>
         </section> 
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
             <section className="img-container">
-                <img src={Aston1} alt="intern front seat" />
-                <img src={Aston2} alt="interior screen" />
-                <img src={Aston3} alt="seat" />
-                <img src={Aston4} alt="top view" />
+                <img src={RangeRover_1} alt="range rover seats" />
+                <img src={RangeRover_2} alt="range rover front interior" />
+                <img src={RangeRover_3} alt="range rover door open" />
+                <img src={RangeRover_4} alt="range rover back seat" />
             </section>
             <section className="info-container">
             <h3>Key Specifications</h3>

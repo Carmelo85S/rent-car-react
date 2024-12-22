@@ -1,10 +1,10 @@
-import AstonVanquish from '../../../assets/performance/aston/aston-vanquish.webp';
+import LexusLxHero from '../../../assets/suv/lexuslx/lexus-lx-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Aston1 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern-front.webp';
-import Aston2 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern.webp';
-import Aston3 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-seat.webp';
-import Aston4 from '../../../assets/cabriolet/aston-martin/aston-martin-booking.webp';
+import LexusLx_1 from '../../../assets/suv/lexuslx/lexus-lx-back-monitor.webp';
+import LexusLx_2 from '../../../assets/suv/lexuslx/lexus-lx-front-drive.webp';
+import LexusLx_3 from '../../../assets/suv/lexuslx/lexus-lx-front-view.webp';
+import LexusLx_4 from '../../../assets/suv/lexuslx/lexus-lx-space.webp';
 
 import '../../../style/car-details/car-details.css'
 
@@ -30,17 +30,17 @@ const LexusLx = () => {
             </p>
         </section>
             <section className="img-container">
-                <img src={AstonVanquish} alt="Black Aston martin Vansquish on the road" />
+                <img src={LexusLxHero} alt="Lexus lx and panorama" />
             </section>
         </section> 
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
             <section className="img-container">
-                <img src={Aston1} alt="intern front seat" />
-                <img src={Aston2} alt="interior screen" />
-                <img src={Aston3} alt="seat" />
-                <img src={Aston4} alt="top view" />
+                <img src={LexusLx_1} alt="Lexus lx back passenger monitor" />
+                <img src={LexusLx_2} alt="Lexus lx front drive in front of a pine forest" />
+                <img src={LexusLx_3} alt="Lexus lx front view" />
+                <img src={LexusLx_4} alt="Lexus lx has a lot of space and 6 seats" />
             </section>
             <section className="info-container">
             <h3>Key Specifications</h3>

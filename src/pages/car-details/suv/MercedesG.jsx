@@ -1,10 +1,10 @@
-import AstonVanquish from '../../../assets/performance/aston/aston-vanquish.webp';
+import MercedesHero from '../../../assets/suv/mercedes-g/mercedes-g-class.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Aston1 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern-front.webp';
-import Aston2 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern.webp';
-import Aston3 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-seat.webp';
-import Aston4 from '../../../assets/cabriolet/aston-martin/aston-martin-booking.webp';
+import Mercedes_1 from '../../../assets/suv/mercedes-g/mercedes-g-front-interior.webp';
+import Mercedes_2 from '../../../assets/suv/mercedes-g/mercedes-g-back-seat.webp';
+import Mercedes_3 from '../../../assets/suv/mercedes-g/mercedes-g-drive.webp';
+import Mercedes_4 from '../../../assets/suv/mercedes-g/mercedes-g-back-seat-white.webp';
 
 import '../../../style/car-details/car-details.css'
 
@@ -30,17 +30,17 @@ const MercedesG = () => {
             </p>
         </section>
             <section className="img-container">
-                <img src={AstonVanquish} alt="Black Aston martin Vansquish on the road" />
+                <img src={MercedesHero} alt="Mercedes class g on the road" />
             </section>
         </section> 
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
             <section className="img-container">
-                <img src={Aston1} alt="intern front seat" />
-                <img src={Aston2} alt="interior screen" />
-                <img src={Aston3} alt="seat" />
-                <img src={Aston4} alt="top view" />
+                <img src={Mercedes_1} alt="Mercedes class g front interior" />
+                <img src={Mercedes_2} alt="Mercedes class g back seats" />
+                <img src={Mercedes_3} alt="Mercedes class g drive" />
+                <img src={Mercedes_4} alt="Mercedes class g white back seats" />
             </section>
             <section className="info-container">
             <h3>Key Specifications</h3>

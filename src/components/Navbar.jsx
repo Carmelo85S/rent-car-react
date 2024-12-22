@@ -1,88 +1,92 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import '../style/navbar/navbar.css';
 
 const Navbar = () => {
-    
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    const toggleNav = () => {
+        setIsNavOpen(!isNavOpen);
+    };
+
+    // Function to close the navbar when a link is clicked
+    const closeNav = () => {
+        setIsNavOpen(false);
+    };
+
     return (
         <div className="header">
-            <nav className="navigation">
-                <h3 className="logo">Ride<span>Ready</span></h3>
-                <ul className="list-container">
+            <nav className={`navigation ${isNavOpen ? 'open' : ''}`}>
+                <section className="logo-button">
+                    <h3 className="logo">Ride<span>Ready</span></h3>
+                    <button className={`nav-toggle ${isNavOpen ? 'active' : ''}`}
+                            onClick={toggleNav}
+                    >
+                        <h3>R<i><span>R</span></i></h3>
+                    </button>
+                </section>
+                
+                <ul className={`list-container ${isNavOpen ? 'show' : ''}`}>
                     {/* Main Dropdown */}
-                    <li className='dropdown'>
-                        <Link className="dropbtn" to="#">TOOLS</Link>
-                        <ul className="dropdown-content">
-                            <li>
-                                <Link className="droplink" to="/test">COUNTER</Link>
-                            </li>
-                            <li>
-                                <Link className="droplink" to="/color-picker">PICKER</Link>
-                            </li>
-                            <li>
-                                <Link className="droplink" to="/to-do-list">TO DO LIST</Link>
-                            </li>
-                        </ul>
-                    </li>
-
                     <li>
-                        <Link className="link" to="/">HOME</Link>
+                        <Link className="link" to="/" onClick={closeNav}>HOME</Link>
                     </li>
                     <li>
-                        <Link className="link" to="/about">ABOUT US</Link>
+                        <Link className="link" to="/about" onClick={closeNav}>ABOUT US</Link>
                     </li>
                     
                     {/* Vehicles Dropdown */}
                     <li className='dropdown'>
-                        <Link className="dropbtn" to="/">VEHICLE</Link>
+                        <Link className="dropbtn" to="/" onClick={closeNav}>VEHICLE</Link>
                         <ul className="dropdown-content">
                             <li>
-                                <Link className="droplink" to="/cabriolet">CABRIOLET</Link>
+                                <Link className="droplink" to="/cabriolet" onClick={closeNav}>CABRIOLET</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/performance">PERFORMANCE</Link>
+                                <Link className="droplink" to="/performance" onClick={closeNav}>PERFORMANCE</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/suv">SUV</Link>
+                                <Link className="droplink" to="/suv" onClick={closeNav}>SUV</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/sedan">SEDAN</Link>
+                                <Link className="droplink" to="/sedan" onClick={closeNav}>SEDAN</Link>
                             </li>
                         </ul>
                     </li>
                     
                     {/* Services Dropdown */}
                     <li className='dropdown'>
-                        <Link className="dropbtn" to="/">SERVICE</Link>
+                        <Link className="dropbtn" to="/" onClick={closeNav}>SERVICE</Link>
                         <ul className="dropdown-content-service">
                             <li>
-                                <Link className="droplink" to="/monthly-sub">MONTHLY SUB</Link>
+                                <Link className="droplink" to="/monthly-sub" onClick={closeNav}>MONTHLY SUB</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/chauffeur">CHAUFFEUR</Link>
+                                <Link className="droplink" to="/chauffeur" onClick={closeNav}>CHAUFFEUR</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/private-lounge">PRIVATE LOUNGE</Link>
+                                <Link className="droplink" to="/private-lounge" onClick={closeNav}>PRIVATE LOUNGE</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/long-term">LONG TERM</Link>
+                                <Link className="droplink" to="/long-term" onClick={closeNav}>LONG TERM</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/short-term">SHORT TERM</Link>
+                                <Link className="droplink" to="/short-term" onClick={closeNav}>SHORT TERM</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/wedding">WEDDING CAR</Link>
+                                <Link className="droplink" to="/wedding" onClick={closeNav}>WEDDING CAR</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/driving-tour">DRIVING TOUR</Link>
+                                <Link className="droplink" to="/driving-tour" onClick={closeNav}>DRIVING TOUR</Link>
                             </li>
                             <li>
-                                <Link className="droplink" to="/speed-drive">SPEED DRIVE</Link>
+                                <Link className="droplink" to="/speed-drive" onClick={closeNav}>SPEED DRIVE</Link>
                             </li>
                         </ul>
                     </li>
 
                     <li>
-                        <Link className="link" to="/contact-info">CONTACT</Link>
+                        <Link className="link" to="/contact-info" onClick={closeNav}>CONTACT</Link>
                     </li>
                 </ul>
             </nav>

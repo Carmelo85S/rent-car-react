@@ -31,7 +31,7 @@ const MonthlySub = () => {
                         <Link className="cta" to="/contact-info">Contact us</Link>
                     </section>
                     <section className="img-info-container-right">
-                        <section clclassNameass="img-info">
+                        <section className="img-info">
                             <img src={Monthly1} alt="audi driving interior" />
                         </section>
                     </section>
