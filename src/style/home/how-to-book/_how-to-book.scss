@@ -40,3 +40,66 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    .how-to-book-wrapper{
+        padding-top: 30px;
+        .how-to-book-container{
+            @include container;
+            @include flexbox(space-between, center, column);
+    
+            .how-to-book-step{
+                @include dimension(300px, 120px);
+                @include flexbox(space-between, center, column);
+                margin-bottom: 40px;
+    
+                .step-title{
+                    @include h3;
+                    font-size: 25px;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                }
+    
+                .title{
+                    @include h3;
+                    font-size: 25px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+    
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px){
+    .how-to-book-wrapper{
+        padding-top: 30px;
+
+        .how-to-book-container{
+            @include container;
+            @include flexbox(space-around, center, row, wrap);
+    
+            .how-to-book-step{
+                @include dimension(250px, 120px);
+                @include flexbox(space-between, center, column);
+                margin-bottom: 40px;
+    
+                .step-title{
+                    @include h3;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                }
+    
+                .title{
+                    @include h3;
+                    font-size: 25px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+    
+            }
+        }
+    }
+}
+

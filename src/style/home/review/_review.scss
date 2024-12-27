@@ -19,7 +19,7 @@
 
     .review-container{
         @include container;
-        @include flexbox(space-between, center, row, wrap);
+        @include flexbox(space-around, center, row, wrap);
 
         .review-card{
             @include dimension(300px, 200px);

@@ -97,3 +97,99 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    .home-hero-wrapper{
+        min-height: 70vh;
+        background-image: url(../../../assets/home/hero-vertical-s.webp);
+
+        .home-hero-container{
+            @include dimension (500px, 200px);
+            @include flexbox(center, center, column);
+            margin: auto;
+    
+            .home-title{
+                max-width: 450px;
+                width: 100%;
+                min-height: 30px;
+                font-family: font.$primary;
+                line-height: 70px;
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+    
+            .home-info {
+                text-align: justify;
+                @include dimension(500px, 100px);
+                animation: slide-in-info 1s ease-in-out;
+                padding: 10px;
+                background-color: rgba(10, 10, 10, 0.8);
+            }
+        }
+      
+        .car-category-container{
+            @include dimension(500px, 100px);
+            @include flexbox(center, center, row, wrap);
+            margin: auto;
+            position:relative;
+            top:10px;
+    
+            img{
+                width:180px;
+                height: auto;
+                border-radius:5px;
+                margin: 10px 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px){
+    .home-hero-wrapper{
+        min-height: 50vh;
+        background-image: url(../../../assets/home/hero-vertical-s.webp);
+
+        .home-hero-container{
+            @include dimension (700px, 200px);
+            @include flexbox(center, center, column);
+            margin: auto;
+    
+            .home-title{
+                max-width: 700px;
+                width: 100%;
+                min-height: 30px;
+                font-family: font.$primary;
+                line-height: 70px;
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+    
+            .home-info {
+                text-align: justify;
+                font-size: 22px;
+                line-height: 40px;
+                @include dimension(700px, 100px);
+                animation: slide-in-info 1s ease-in-out;
+                padding: 10px;
+                background-color: rgba(10, 10, 10, 0.8);
+            }
+        }
+      
+        .car-category-container{
+            @include dimension(850px, 100px);
+            @include flexbox(space-evenly, center, row, wrap);
+            margin: auto;
+            position:relative;
+            top:10px;
+    
+            img{
+                width:180px;
+                height: auto;
+                border-radius:5px;
+                margin: 10px 10px;
+            }
+        }
+    }
+}
+

@@ -9,11 +9,11 @@ const About = () => {
     return(
         <div>
             <HeroAbout />
-            <MeetTeam />
+            {/*<MeetTeam />
             <TeamList />
             <Mission />
             <Rides />
-            <FormMain />
+            <FormMain />*/}
         </div>
     )
 }

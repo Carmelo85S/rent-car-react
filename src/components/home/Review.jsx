@@ -28,7 +28,7 @@ const Review = () => {
 
     return(
         <div className="review-wrapper">
-            <Title title="Our customers say"/>
+            <Title title="They say"/>
             <section className="review-container">
                 {data.map((review, index) => (
                     <div key={index} className="review-card">
