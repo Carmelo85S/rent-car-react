@@ -30,6 +30,34 @@
                 color: color.$textWhite;
             }
         }
+    }
+}
 
+@media screen and (max-width:500px){
+    .about-wrapper{
+        background-image: url(../../../assets/about/vertical-sm.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 80vh;
+    
+        .about-hero-container{
+            .about-title{
+                @include h1;
+                font-size: 50px;
+            }
+    
+            .info-container{
+                @include dimension(500px, 100px);
+                margin: 0;
+    
+                .info-text{
+                    text-align: center;
+                    @include info;
+                    color: color.$textWhite;
+                    background-color: rgba(10, 10, 10, 0.8);
+                }
+            }
+        }
     }
 }

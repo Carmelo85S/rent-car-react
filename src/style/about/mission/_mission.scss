@@ -5,25 +5,34 @@
 .mission-wrapper{
     @include wrapper;
     background-color: color.$bgWrapper;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     .mission-content-container{
         @include container;
         min-height: 400px;
-        @include flexbox(space-between, flex-start, row, wrap);
+        @include flexbox(center, center, row, wrap);
+        margin: auto;
 
         .image{
-            @include dimension(500px, auto);
+            @include dimension(400px, auto);
             border-radius: 4px;
+            margin: 20px;
             box-shadow: 2px 2px 12px rgb(69, 69, 69);
         }
 
         .info-container{
             @include dimension(700px, 320px);
             @include flexbox(space-between,center,column);
+            margin-bottom: 20px;
 
             .info{
                 @include info;
                 text-align: justify;
+                margin: 20px;
 
                 span{
                     font-style: italic;

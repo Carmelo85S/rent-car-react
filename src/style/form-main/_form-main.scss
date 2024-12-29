@@ -6,14 +6,14 @@
     @include wrapper;
 
     .form-container {
-        @include flexbox(space-between, center, row, wrap);
+        @include flexbox(center, center, column);
         @include container;
 
         .form {
             @include dimension(600px, 400px);
 
             form {
-                @include flexbox(space-between, flex-start, column);
+                @include flexbox(space-between, center, column);
 
                 label {
                     display: block;
@@ -66,7 +66,6 @@
             padding: 1rem;
 
             iframe {
-                max-width: 100%;
                 width: 100%;
                 min-height: 500px;
                 border-radius: 5px;
@@ -74,3 +73,4 @@
         }
     }
 }
+

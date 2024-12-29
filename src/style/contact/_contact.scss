@@ -65,3 +65,32 @@
         }
     }
 }
+
+@media screen and (max-width: 775px){
+    .wrapper-contact{
+        min-height: 40vh;
+        .contact-container{
+    
+            &-heading{
+    
+                .title{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+    
+    .info-wrapper{
+        @include wrapper;
+    
+        .info-container{
+            @include dimension(500px, 400px);
+            margin: auto;
+            @include flexbox(space-around, center, column);
+    
+            .info-card{
+                @include dimension(300p, auto);
+            }
+        }
+    }
+}

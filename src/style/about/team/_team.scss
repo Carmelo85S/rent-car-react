@@ -18,6 +18,7 @@
             .info{
                 @include info;
                 text-align: justify;
+                margin: auto 20px;
 
                 span{
                     font-style: italic;

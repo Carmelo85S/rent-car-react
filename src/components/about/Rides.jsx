@@ -5,7 +5,7 @@ const Rides = () => {
   return (
     <div className="content-wrapper">
         <section className="title-container">
-                <h1 className="title">Unforgettable Rides</h1>
+                <h1 className="title">Rides</h1>
         </section>
         <section className="content-container">
             <section className="info-container">

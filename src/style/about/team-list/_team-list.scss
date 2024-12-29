@@ -14,7 +14,7 @@
         @include flexbox(space-between, center, row, wrap);
 
         .members{
-            @include flexbox(space-between, center, column, wrap);
+            @include flexbox(space-between, center, column);
             margin: auto;
 
             img{
@@ -43,6 +43,52 @@
                 @include info;
                 font-size:14px;
                 letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .team-wrapper{
+        padding: 20px 0;
+    
+        .team-container{
+            max-width: 700px;
+            min-height: auto;
+            width: 100%;
+            @include flexbox(space-between, center, row, wrap);
+    
+            .members{
+                @include flexbox(space-between, center, column);
+                margin: auto;
+    
+                img{
+                    width: 120px;
+                    border-radius:50%;
+                    border:1px solid rgb(125, 125, 125);
+                    box-shadow: 2px 2px 12px black;
+    
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+            }
+    
+            .team-member-container{
+                @include dimension(200px, 80px);
+                @include flexbox(space-around, center, column);
+    
+                .member-name{
+                    @include h3;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+    
+                .member-position{
+                    @include info;
+                    font-size:14px;
+                    letter-spacing: 1px;
+                }
             }
         }
     }

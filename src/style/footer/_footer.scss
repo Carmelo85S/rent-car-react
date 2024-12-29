@@ -4,12 +4,20 @@
 
 .footer-wrapper{
     @include wrapper;
-    min-height: 450px;
+    min-height: 100px;
     @include flexbox(space-around, center, column);
     background-color: color.$bgFooter;
 
     .img-logo{
-        @include dimension(900px, 100px);
+        margin-top: 30px;
+        width: 50%;
+    }
+
+    .footer-cit{
+        @include h4;
+        font-size: 18px;
+        font-style: italic;
+        color: #FFFFFF;
     }
 
     .footer-container{
@@ -18,15 +26,14 @@
         
         .list-container{
             list-style: none;
-            @include dimension(250px, 150px);
-            @include flexbox(space-between, center, column);
+            @include dimension(200px, 60px);
+            @include flexbox(space-between, center, row);
 
-            li{
                 .link{
                     color: color.$textNav;
-                    font-size: 16px;
+                    font-size: 24px;
                     text-decoration: none;
-                    background-color: transparent;
+                    color:white;
                     cursor: pointer;
                     font-family: font.$primary;
                     letter-spacing: 2px;
@@ -39,8 +46,6 @@
                         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
                     }
                 }
-            }
         }
-
     }
 }

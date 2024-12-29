@@ -50,3 +50,42 @@
         }
     }
 }
+
+@media screen and (max-width: 860px){
+    .content-wrapper{
+    
+        .title-container{
+            @include dimension(500px, 200px);
+            
+            .title{
+                font-size: 70px;
+            }
+        }
+    
+        .content-container{
+            min-height: 300px;
+            @include flexbox(center, center,row, wrap);
+    
+            .info-container{
+                @include flexbox(center, center, column);
+    
+                .info{
+                    text-align: justify;
+                    margin: 20px;
+                }
+            }
+    
+            .image-container{
+                @include dimension(500px, 500px);
+                display: flex;
+                justify-content:center;
+    
+                img{
+                    @include dimension (500px, auto);
+                    border-radius: 4px;
+                    box-shadow: 2px 2px 12px black;
+                }
+            }
+        }
+    }
+}
