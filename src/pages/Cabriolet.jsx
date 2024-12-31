@@ -4,7 +4,6 @@ import {
   BmwS8, 
   BmwZ4, 
   Mustang, 
-  Maserati 
 } from '../assets/cabriolet/index';
 import Title from '../components/Title';
 import Cabriolet from '../components/Car-card';
