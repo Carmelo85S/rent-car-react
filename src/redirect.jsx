@@ -12,7 +12,7 @@ import SpeedCat from './pages/Speed';
 import AstonP from './pages/car-details/speed/AstonP';
 import Bugatti from './pages/car-details/speed/Bugatti';
 import Ferrari from './pages/car-details/speed/Ferrari';
-import LamborghiniHuracan from './pages/car-details/speed/lamborghiniHuracan';
+import LamborghiniHuracan from './pages/car-details/speed/LamborghiniHuracan';
 import Koenigssegg from './pages/car-details/speed/Koenigssegg';
 import McLaren from './pages/car-details/speed/McLaren';
 import Suv from './pages/Suv';
