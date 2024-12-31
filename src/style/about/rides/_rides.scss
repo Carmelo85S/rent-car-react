@@ -25,20 +25,22 @@
     .content-container{
         @include container;
         min-height: 700px;
-        @include flexbox(space-between, center,row, wrap);
+        @include flexbox(center, center,row, wrap);
 
         .info-container{
-            @include dimension(600px, 600px);
+            @include dimension(700px,320px);
             @include flexbox(space-between, center, column);
 
             .info{
                 @include info;
+                text-align: justify;
+                margin: 20px;
                 color: color.$textWhite;
             }
         }
 
         .image-container{
-            @include dimension(600px, 500px);
+            @include dimension(500px, 500px);
             display: flex;
             justify-content:flex-end;
 
@@ -64,7 +66,7 @@
     
         .content-container{
             min-height: 300px;
-            @include flexbox(center, center,row, wrap);
+            @include flexbox(space-around, center,row, wrap);
     
             .info-container{
                 @include flexbox(center, center, column);
