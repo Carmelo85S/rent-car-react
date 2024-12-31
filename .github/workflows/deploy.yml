@@ -3,7 +3,7 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  
+      - main
 
 jobs:
   build:
@@ -24,13 +24,19 @@ jobs:
     - name: Build project
       run: npm run build
 
+    - name: Configure Git
+      run: |
+        git config --global user.name "Carmelo85S"
+        git config --global user.email "carmelo.salis85@gmail.com"
+
     - name: Deploy files to main branch
       run: |
         rm -rf .git
         mv dist/* ./
         rm -r dist
         git init
-        git remote add origin https://github.com/carmelo85s/rent-car-react.git
         git add .
         git commit -m "Deploy to GitHub Pages"
+        git branch -M main
+        git remote add origin https://github.com/carmelo85s/rent-car-react.git
         git push --force origin main
