@@ -50,7 +50,7 @@
 
     .img-container {
       @include dimension(650px, 450px);
-      @include flexbox(space-evenly, center, row);
+      @include flexbox(space-evenly, center, row, wrap);
       gap: 20px;
 
       img {
@@ -415,7 +415,6 @@
         @include flexbox(space-evenly, center, row, wrap);
         gap: 20px;
         margin: auto;
-        border:1px solid black;
   
         img {
           max-width: 40%;

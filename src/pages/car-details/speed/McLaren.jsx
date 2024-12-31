@@ -1,10 +1,10 @@
-import MclarenHero from '../../../assets/speed/mclaren/mclaren-720S.webp';
+import MclarenHero from '../../../assets/speed/mclaren/mclaren-720s.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import McLaren_1 from '../../../assets/speed/mclaren/mclaren-720S-intern-front.webp';
-import McLaren_2 from '../../../assets/speed/mclaren/mclaren-720S-seat.webp';
-import McLaren_3 from '../../../assets/speed/mclaren/mclaren-720S-wheel.webp';
-import McLaren_4 from '../../../assets/speed/mclaren/mclaren-720S-back.webp';
+import McLaren_1 from '../../../assets/speed/mclaren/intern-front.webp';
+import McLaren_2 from '../../../assets/speed/mclaren/seat.webp';
+import McLaren_3 from '../../../assets/speed/mclaren/wheel.webp';
+import McLaren_4 from '../../../assets/speed/mclaren/back.webp';
 
 import '../../../style/car-details/car-details.css'
 
