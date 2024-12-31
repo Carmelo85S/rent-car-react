@@ -1,4 +1,4 @@
-import MclarenHero from '../../../assets/speed/mclaren/mclaren-720s.webp';
+import MclarenHero from '../../../assets/speed/mclaren/hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
 import McLaren_1 from '../../../assets/speed/mclaren/intern-front.webp';
