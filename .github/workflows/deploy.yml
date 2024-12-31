@@ -24,13 +24,12 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Configure Git
+    - name: Deploy files to GitHub Pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config --global user.name "Carmelo85S"
+        git config --global user.name "carmelo85s"
         git config --global user.email "carmelo.salis85@gmail.com"
-
-    - name: Deploy files to main branch
-      run: |
         rm -rf .git
         mv dist/* ./
         rm -r dist
@@ -38,5 +37,5 @@ jobs:
         git add .
         git commit -m "Deploy to GitHub Pages"
         git branch -M main
-        git remote add origin https://github.com/carmelo85s/rent-car-react.git
+        git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/carmelo85s/rent-car-react.git
         git push --force origin main
