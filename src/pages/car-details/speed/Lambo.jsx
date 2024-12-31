@@ -8,7 +8,7 @@ import Lamborghini_4 from '../../../assets/speed/lamborghini-huracan/lamborghini
 
 import '../../../style/car-details/car-details.css'
 
-const LamborghiniHuracan = () => {
+const Lambo = () => {
   return (
     <>
     <div className='wrapper'>
@@ -81,4 +81,4 @@ const LamborghiniHuracan = () => {
   )
 }
 
-export default LamborghiniHuracan
+export default Lambo
