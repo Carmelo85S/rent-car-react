@@ -7,6 +7,6 @@ export default defineConfig({
   resolve: {    
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
-  base: "/"
+  base: "/react-ride-ready-rent-a-car",
 });
 
