@@ -7,6 +7,6 @@ export default defineConfig({
   resolve: {    
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
-  base: "/react-ride-ready-rent-a-car",
+  base: config.mode === 'production' ? '/react-ride-ready-rent-a-car' : undefined,
 });
 
