@@ -7,7 +7,7 @@ const Mission = () => {
         <Title title="Our mission" />
         <section className="mission-content-container">
             <section className="image-container">
-                <img className="image" src={Bentley} alt="orange bentley" />
+                <img src={Bentley} alt="orange bentley" />
             </section>
             <section className="info-container">
                 <p className="info">

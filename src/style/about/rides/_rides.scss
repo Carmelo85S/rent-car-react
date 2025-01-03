@@ -53,22 +53,25 @@
     }
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 1199px){
     .content-wrapper{
     
         .title-container{
             @include dimension(500px, 200px);
             
             .title{
-                font-size: 70px;
+                font-size: 50px;
+                font-weight: 700;
             }
         }
     
         .content-container{
+            @include container;
             min-height: 300px;
-            @include flexbox(space-around, center,row, wrap);
+            @include flexbox(center, center, column);
     
             .info-container{
+                @include container;
                 @include flexbox(center, center, column);
     
                 .info{
@@ -83,8 +86,8 @@
                 justify-content:center;
     
                 img{
-                    width: 100%;
-                    height: auto;
+                    aspect-ratio: 1;
+                    margin: 10px;
                     border-radius: 4px;
                     box-shadow: 2px 2px 12px black;
                 }

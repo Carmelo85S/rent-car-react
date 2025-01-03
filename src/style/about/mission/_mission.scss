@@ -13,15 +13,17 @@
 
     .mission-content-container{
         @include container;
-        min-height: 400px;
-        @include flexbox(center, center, row, wrap);
+        min-height: 350px;
+        @include flexbox(space-between, center, row, wrap);
         margin: auto;
-
-        .image{
-            @include dimension(450px, auto);
-            border-radius: 4px;
-            margin: 20px;
-            box-shadow: 2px 2px 12px rgb(69, 69, 69);
+        .image-container{
+            @include dimension(500px, auto);
+            img{
+                width:500px;
+                border-radius: 4px;
+                margin: auto auto;
+                box-shadow: 2px 2px 12px rgb(69, 69, 69);
+            }
         }
 
         .info-container{
@@ -40,4 +42,70 @@
             }
         }
     }
+}
+
+@media screen and (max-width:480px){
+    .mission-wrapper{
+        .mission-content-container{
+            @include flexbox(center, center, column);
+            .image-container{
+                @include dimension(320px, auto);
+                display: flex;
+                img{
+                    width: 300px;
+                    border-radius: 4px;
+                    box-shadow: 2px 2px 12px rgb(69, 69, 69);
+                }
+            }
+            
+            .info-container{
+                @include dimension(700px, 320px);
+                @include flexbox(space-between,center,column);
+                margin-bottom: 20px;
+    
+                .info{
+                    @include info;
+                    text-align: justify;
+                    margin: 20px;
+    
+                    span{
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 481px) and (max-width: 1199px){
+    .mission-wrapper{
+        .mission-content-container{
+            @include flexbox(center, center, column);
+            .image-container{
+                @include dimension(580px, auto);
+                display: flex;            
+                img{
+                    width: 100%;
+                    border-radius: 4px;
+                    box-shadow: 2px 2px 12px rgb(69, 69, 69);
+                }
+            }
+            
+            .info-container{
+                @include dimension(1200px, 280px);
+                @include flexbox(space-between,center,column);
+                margin-bottom: 20px;
+    
+                .info{
+                    @include info;
+                    text-align: justify;
+                    margin: 20px;
+    
+                    span{
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    } 
 }
