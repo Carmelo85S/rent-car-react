@@ -7,5 +7,5 @@ export default defineConfig(({ mode }) => ({
   resolve: {    
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
-  base: mode === 'production' ? '/react-ride-ready-rent-a-car' : '/',
+  base: './',
 }));
