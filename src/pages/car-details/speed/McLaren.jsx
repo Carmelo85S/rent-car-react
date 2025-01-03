@@ -1,13 +1,7 @@
 import MclarenHero from '../../../assets/speed/mclaren/hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import McLaren_1 from '../../../assets/speed/mclaren/intern-front.webp';
-import McLaren_2 from '../../../assets/speed/mclaren/seat.webp';
-import McLaren_3 from '../../../assets/speed/mclaren/wheel.webp';
-import McLaren_4 from '../../../assets/speed/mclaren/back.webp';
-
 import '../../../style/car-details/car-details.css'
-
 const McLaren = () => {
   return (
     <>
@@ -35,12 +29,6 @@ const McLaren = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={McLaren_1} alt="Mc Laren front interior" />
-                <img src={McLaren_2} alt="Mc Laren fron nterior yellow" />
-                <img src={McLaren_3} alt="Mc Laren back view" />
-                <img src={McLaren_4} alt="Mc Laren top view" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
             <ul>

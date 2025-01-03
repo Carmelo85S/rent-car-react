@@ -1,11 +1,6 @@
 import CadillacEscaladeHero from '../../../assets/suv/cadillac-escalade/cadillac-escalade-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Cadillac_1 from '../../../assets/suv/cadillac-escalade/cadillac-escalade-back-view.webp';
-import Cadillac_2 from '../../../assets/suv/cadillac-escalade/cadillac-escalade-drive.webp';
-import Cadillac_3 from '../../../assets/suv/cadillac-escalade/cadillac-escalade-front-interior.webp';
-import Cadillac_4 from '../../../assets/suv/cadillac-escalade/cadillac-escalade-front.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const CadillacEscalade = () => {
@@ -36,12 +31,6 @@ const CadillacEscalade = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={Cadillac_1} alt="cadillac escalade back view" />
-                <img src={Cadillac_2} alt="cadillac escalade drive" />
-                <img src={Cadillac_3} alt="cadillac escalae front" />
-                <img src={Cadillac_4} alt="cadillac escalae front view" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
                 <ul>

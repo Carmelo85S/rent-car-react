@@ -1,11 +1,6 @@
 import GenesisG80_hero from '../../../assets/sedan/genesis-g80/genesis-g80-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import GenesisG80_1 from '../../../assets/sedan/genesis-g80/genesis-g80-back-view.webp';
-import GenesisG80_2 from '../../../assets/sedan/genesis-g80/genesis-g80-drive.webp';
-import GenesisG80_3 from '../../../assets/sedan/genesis-g80/genesis-g80-back-seat.webp';
-import GenesisG80_4 from '../../../assets/sedan/genesis-g80/genesis-g80-back-seat-long.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const GenesisG80 = () => {
@@ -35,12 +30,6 @@ const GenesisG80 = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={GenesisG80_1} alt="genesis g80 back view" />
-                <img src={GenesisG80_2} alt="genesis g80 drive" />
-                <img src={GenesisG80_3} alt="genesis g80 back seat" />
-                <img src={GenesisG80_4} alt="genesis g80 back seats long space for legs" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
                 <ul>

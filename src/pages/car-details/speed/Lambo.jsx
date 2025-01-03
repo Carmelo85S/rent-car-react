@@ -1,11 +1,6 @@
 import LamborghiniHero from '../../../assets/speed/lamborghini-huracan/lamborghini-on-the-road.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Lamborghini_1 from '../../../assets/speed/lamborghini-huracan/lamborghini-intern-front.webp';
-import Lamborghini_2 from '../../../assets/speed/lamborghini-huracan/lamborghini-yellow.webp';
-import Lamborghini_3 from '../../../assets/speed/lamborghini-huracan/lamborghini-top.webp';
-import Lamborghini_4 from '../../../assets/speed/lamborghini-huracan/lamborghini-back.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const Lambo = () => {
@@ -36,12 +31,6 @@ const Lambo = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={Lamborghini_1} alt="Lamborghini Huracan front interior" />
-                <img src={Lamborghini_2} alt="Lamborghini Huracan fron nterior yellow" />
-                <img src={Lamborghini_3} alt="Lamborghini Huracan back view" />
-                <img src={Lamborghini_4} alt="Lamborghini Huracan top view" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
             <ul>

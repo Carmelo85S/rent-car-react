@@ -1,10 +1,6 @@
 import AudiQ8_hero from '../../../assets/suv/audiq8/audi-q8-road.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import AudiQ8_1 from '../../../assets/suv/audiq8/audi-q8-front.webp';
-import AudiQ8_2 from '../../../assets/suv/audiq8/audi-q8-front-seat.webp';
-import AudiQ8_3 from '../../../assets/suv/audiq8/audi-q8-drive.webp';
-import AudiQ8_4 from '../../../assets/suv/audiq8/audi-q8-back.webp';
 
 import '../../../style/car-details/car-details.css'
 
@@ -36,12 +32,6 @@ const AudiQ8 = () => {
         </div>
         <section className="img-info-wrapper">
             <section className="car-spec-container">
-                <section className="img-container">
-                    <img src={AudiQ8_1} alt="audi q8 front view" />
-                    <img src={AudiQ8_2} alt="audi q8 front interior" />
-                    <img src={AudiQ8_3} alt="audi q8 drive" />
-                    <img src={AudiQ8_4} alt="audi q8 back" />
-                </section>
                 <section className="info-container">
                 <h3>Key Specifications</h3>
                     <ul>

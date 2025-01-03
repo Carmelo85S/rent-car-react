@@ -1,10 +1,6 @@
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
 import Porsche911 from '../../../assets/cabriolet/porsche911/porsche911turbo.webp';
-import Porsche911_1 from '../../../assets/cabriolet/porsche911/porsche-911-intern-front.webp';
-import Porsche911_2 from '../../../assets/cabriolet/porsche911/porsche-911-intern.webp';
-import Porsche911_3 from '../../../assets/cabriolet/porsche911/porsche-911-on-the-road.webp';
-import Porsche911_4 from '../../../assets/cabriolet/porsche911/porsche-911-top.webp';
 import '../../../style/car-details/car-details.css';
 
 const PorscheTurbo = () => {
@@ -39,13 +35,6 @@ const PorscheTurbo = () => {
             {/* Gallery and Specifications */}
             <section className="img-info-wrapper">
                 <section className="car-spec-container">
-                    <section className="img-container">
-                        <img src={Porsche911_1} alt="porsche 911 Cabriolet intern front" />
-                        <img src={Porsche911_2} alt="porsche 911 Cabriolet interior" />
-                        <img src={Porsche911_3} alt="porsche 911 Cabriolet on the road" />
-                        <img src={Porsche911_4} alt="porsche 911 Cabriolet top view" />
-                    </section>
-
                     <section className="info-container">
                         <h3>Key Specifications</h3>
                         <ul>

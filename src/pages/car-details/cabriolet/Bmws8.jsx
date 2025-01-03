@@ -1,8 +1,4 @@
 import BmwS8 from '../../../assets/cabriolet/bmws8/bmw-8-serie.webp';
-import Bmws8_1 from '../../../assets/cabriolet/bmws8/bmw-8-serie-back.webp';
-import Bmws8_2 from '../../../assets/cabriolet/bmws8/bmw-8-serie-front.webp';
-import Bmws8_3 from '../../../assets/cabriolet/bmws8/bmw-8-serie-intern.webp';
-import Bmws8_4 from '../../../assets/cabriolet/bmws8/bmw-8-serie-top.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
 import '../../../style/car-details/car-details.css';
@@ -36,13 +32,6 @@ const Bmws8 = () => {
             {/* Gallery and Specifications */}
             <section className="img-info-wrapper">
                 <section className="car-spec-container">
-                    <section className="img-container">
-                        <img src={Bmws8_1} alt="BMW S8 Cabriolet back view" />
-                        <img src={Bmws8_2} alt="BMW S8 Cabriolet front view" />
-                        <img src={Bmws8_3} alt="BMW S8 Cabriolet interior" />
-                        <img src={Bmws8_4} alt="BMW S8 Cabriolet top view" />
-                    </section>
-
                     <section className="info-container">
                         <h3>Key Specifications</h3>
                         <ul>

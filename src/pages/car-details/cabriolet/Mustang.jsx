@@ -1,10 +1,6 @@
 import Title from '../../../components/Title';
 import FormBooking from '../../../components/FormBooking'
 import Mustang_hero from '../../../assets/cabriolet/mustang/mustang-hero.webp';
-import Mustang_1 from '../../../assets/cabriolet/mustang/mustang-back.webp'
-import Mustang_2 from '../../../assets/cabriolet/mustang/mustang-back-intern.webp'
-import Mustang_3 from '../../../assets/cabriolet/mustang/mustang-front.webp'
-import Mustang_4 from '../../../assets/cabriolet/mustang/mustang-front-intern.webp'
 import '../../../style/car-details/car-details.css'
 
 const Mustang = () => {
@@ -39,13 +35,6 @@ const Mustang = () => {
             {/* Gallery and Specifications */}
             <section className="img-info-wrapper">
                 <section className="car-spec-container">
-                    <section className="img-container">
-                        <img src={Mustang_1} alt="Mustang Cabriolet back view" />
-                        <img src={Mustang_2} alt="Mustang Cabriolet back intern view" />
-                        <img src={Mustang_3} alt="Mustang Cabriolet front" />
-                        <img src={Mustang_4} alt="Mustang Cabriolet front intern" />
-                    </section>
-
                     <section className="info-container">
                         <h3>Key Specifications</h3>
                         <ul>

@@ -1,13 +1,7 @@
 import FerrariHero from '../../../assets/speed/ferrari/ferrari-488-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Ferrari_1 from '../../../assets/speed/ferrari/ferrari-488-stirr-wheel.webp';
-import Ferrari_2 from '../../../assets/speed/ferrari/ferrari-488-intern.webp';
-import Ferrari_3 from '../../../assets/speed/ferrari/ferrari-488-top.webp';
-import Ferrari_4 from '../../../assets/speed/ferrari/ferrari-488-back.webp';
-
 import '../../../style/car-details/car-details.css'
-
 const Ferrari = () => {
   return (
     <>
@@ -35,12 +29,6 @@ const Ferrari = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={Ferrari_1} alt="Ferrari 488 stirrting wheel" />
-                <img src={Ferrari_2} alt="Ferrari 488 interior" />
-                <img src={Ferrari_3} alt="Ferrari 488 black interior" />
-                <img src={Ferrari_4} alt="Ferrari 488 back view" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
             <ul>

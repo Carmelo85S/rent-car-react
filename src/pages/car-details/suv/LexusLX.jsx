@@ -1,11 +1,6 @@
 import LexusLxHero from '../../../assets/suv/lexuslx/lexus-lx-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import LexusLx_1 from '../../../assets/suv/lexuslx/lexus-lx-back-monitor.webp';
-import LexusLx_2 from '../../../assets/suv/lexuslx/lexus-lx-front-drive.webp';
-import LexusLx_3 from '../../../assets/suv/lexuslx/lexus-lx-front-view.webp';
-import LexusLx_4 from '../../../assets/suv/lexuslx/lexus-lx-space.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const LexusLx = () => {
@@ -36,12 +31,6 @@ const LexusLx = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={LexusLx_1} alt="Lexus lx back passenger monitor" />
-                <img src={LexusLx_2} alt="Lexus lx front drive in front of a pine forest" />
-                <img src={LexusLx_3} alt="Lexus lx front view" />
-                <img src={LexusLx_4} alt="Lexus lx has a lot of space and 6 seats" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
                 <ul>

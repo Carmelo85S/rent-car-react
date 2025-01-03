@@ -1,11 +1,6 @@
 import KoenigsseggHero from '../../../assets/speed/koenigsegg/koenigsegg-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Koenigssegg_1 from '../../../assets/speed/koenigsegg/koenigsegg-front-interior2.webp';
-import Koenigssegg_2 from '../../../assets/speed/koenigsegg/koenigsegg-front-interior.webp';
-import Koenigssegg_3 from '../../../assets/speed/koenigsegg/koenigsegg-back.webp';
-import Koenigssegg_4 from '../../../assets/speed/koenigsegg/koenigsegg-back-wing.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const Koenigssegg = () => {
@@ -36,12 +31,6 @@ const Koenigssegg = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={Koenigssegg_1} alt="Koenissegg Jesko front interior" />
-                <img src={Koenigssegg_2} alt="Koenissegg Jesko fron nterior yellow" />
-                <img src={Koenigssegg_3} alt="Koenissegg Jesko back view" />
-                <img src={Koenigssegg_4} alt="Koenissegg Jesko top view" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
             <ul>

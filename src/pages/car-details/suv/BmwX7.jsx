@@ -1,11 +1,6 @@
 import Bmwx7_hero from '../../../assets/suv/bmwx7/bmw-x7-road.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Bmwx7_1 from '../../../assets/suv/bmwx7/bmw-x7-drive.webp';
-import Bmwx7_2 from '../../../assets/suv/bmwx7/bmw-x7-front-view.webp';
-import Bmwx7_3 from '../../../assets/suv/bmwx7/bmw-x7-seat-front.webp';
-import Bmwx7_4 from '../../../assets/suv/bmwx7/bmw-x7-seat.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const BmwX7 = () => {
@@ -37,12 +32,6 @@ const BmwX7 = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={Bmwx7_1} alt="bmw x7 drive" />
-                <img src={Bmwx7_2} alt="bmw x7 front view" />
-                <img src={Bmwx7_3} alt="bmw x7 front seat" />
-                <img src={Bmwx7_4} alt="bmw x7 seat" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
                 <ul>

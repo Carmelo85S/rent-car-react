@@ -1,11 +1,6 @@
 import MercedesShero from '../../../assets/sedan/mercedes-class-s/mercedes-class-s-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import MercedesS_1 from '../../../assets/sedan/mercedes-class-s/mercedes-class-s-front-view.webp';
-import MercedesS_2 from '../../../assets/sedan/mercedes-class-s/mercedes-class-s-front-seat.webp';
-import MercedesS_3 from '../../../assets/sedan/mercedes-class-s/mercedes-class-s-back-seat.webp';
-import MercedesS_4 from '../../../assets/sedan/mercedes-class-s/mercedes-class-s-back.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const MercedesClassS = () => {
@@ -37,12 +32,6 @@ const MercedesClassS = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={MercedesS_1} alt="mercedes class s front view" />
-                <img src={MercedesS_2} alt="mercedes class s front seat" />
-                <img src={MercedesS_3} alt="mercedes class s back seats" />
-                <img src={MercedesS_4} alt="mercedes class s back view" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
                 <ul>

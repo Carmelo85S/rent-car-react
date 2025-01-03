@@ -1,11 +1,6 @@
 import LexusLsHero from '../../../assets/sedan/lexus-ls/lexus-ls-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import LexusLs_1 from '../../../assets/sedan/lexus-ls/lexus-ls-stirring-wheel.webp';
-import LexusLs_2 from '../../../assets/sedan/lexus-ls/lexus-ls-back.webp';
-import LexusLs_3 from '../../../assets/sedan/lexus-ls/lexus-ls-front.webp';
-import LexusLs_4 from '../../../assets/sedan/lexus-ls/lexus-ls-seat.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const LexusLs = () => {
@@ -37,12 +32,6 @@ const LexusLs = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={LexusLs_1} alt="Lexus ls stirring wheel" />
-                <img src={LexusLs_2} alt="Lexus ls back view on movement" />
-                <img src={LexusLs_3} alt="Lexus ls front view" />
-                <img src={LexusLs_4} alt="Lexus ls white back seats" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
                 <ul>

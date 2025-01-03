@@ -1,11 +1,6 @@
-import AstonHero from '../../../assets/cabriolet/aston-martin-booking-front-grid.webp';
+import AstonHero from '../../../assets/cabriolet/aston-martin/aston-cabriolet-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Aston1 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern-front.webp';
-import Aston2 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-intern.webp';
-import Aston3 from '../../../assets/cabriolet/aston-martin/aston-martin-booking-seat.webp';
-import Aston4 from '../../../assets/cabriolet/aston-martin/aston-martin-booking.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const Aston = () => {
@@ -33,14 +28,9 @@ const Aston = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={Aston1} alt="intern front seat" />
-                <img src={Aston2} alt="interior screen" />
-                <img src={Aston3} alt="seat" />
-                <img src={Aston4} alt="top view" />
-            </section>
+            
             <section className="info-container">
-            <h3>Key Specifications</h3>
+                <h3>Key Specifications</h3>
                 <ul>
                     <li><strong>Engine:</strong> 4.0L V8 Twin-Turbocharged</li>
                     <li><strong>Horsepower:</strong> 671 hp</li>

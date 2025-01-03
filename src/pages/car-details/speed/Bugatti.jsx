@@ -1,11 +1,6 @@
 import BugattiHero from '../../../assets/speed/bugatti/bugatti-white.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import Bugatti_1 from '../../../assets/speed/bugatti/bugatti-stirr-wheel.webp';
-import Bugatti_2 from '../../../assets/speed/bugatti/bugatti-intern.webp';
-import Bugatti_3 from '../../../assets/speed/bugatti/bugatti-intern-black.webp';
-import Bugatti_4 from '../../../assets/speed/bugatti/bugatti-back.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const Bugatti = () => {
@@ -35,12 +30,6 @@ const Bugatti = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={Bugatti_1} alt="Bugatti stirrting wheel" />
-                <img src={Bugatti_2} alt="Bugatti interior" />
-                <img src={Bugatti_3} alt="Bugatti black interior" />
-                <img src={Bugatti_4} alt="Bugatti back view" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
             <ul>

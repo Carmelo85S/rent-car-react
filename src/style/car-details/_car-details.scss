@@ -206,17 +206,6 @@
   
     .car-spec-container {
   
-      .img-container {
-        @include dimension(450px, 450px);
-        @include flexbox(space-evenly, center, column);
-        gap: 20px;
-  
-        img {
-          max-width: 90%;
-          border-radius: 1px;
-        }
-      }
-  
       .info-container {
         max-width: 450px;
         margin: auto;

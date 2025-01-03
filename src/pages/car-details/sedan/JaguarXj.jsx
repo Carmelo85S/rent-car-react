@@ -1,11 +1,6 @@
 import JaguarXjHero from '../../../assets/sedan/jaguar-xj/jaguar-xj-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import JaguarXj_1 from '../../../assets/sedan/jaguar-xj/jaguar-xj-back-seat.webp';
-import JaguarXj_2 from '../../../assets/sedan/jaguar-xj/jaguar-xj-back.webp';
-import JaguarXj_3 from '../../../assets/sedan/jaguar-xj/jaguar-xj-drive.webp';
-import JaguarXj_4 from '../../../assets/sedan/jaguar-xj/jaguar-xj-white.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const JaguarXJ = () => {
@@ -35,12 +30,6 @@ const JaguarXJ = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={JaguarXj_1} alt="Jaguar Xj back seat" />
-                <img src={JaguarXj_2} alt="Jaguar Xj on movement back view" />
-                <img src={JaguarXj_3} alt="Jaguar Xj drive" />
-                <img src={JaguarXj_4} alt="Jaguar Xj white on movement side view" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
                 <ul>

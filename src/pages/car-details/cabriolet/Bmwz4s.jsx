@@ -1,10 +1,6 @@
 import Title from '../../../components/Title';
 import FormBooking from '../../../components/FormBooking'
 import Bmwz4_hero from '../../../assets/cabriolet/bmwz4/bmw-z4.webp'
-import Bmwz4_1 from '../../../assets/cabriolet/bmwz4/bmw-z4-back.webp'
-import Bmwz4_2 from '../../../assets/cabriolet/bmwz4/bmw-z4-intern-front-1.webp'
-import Bmwz4_3 from '../../../assets/cabriolet/bmwz4/bmw-z4-intern-front.webp'
-import Bmwz4_4 from '../../../assets/cabriolet/bmwz4/bmw-z4-on-road.webp'
 import '../../../style/car-details/car-details.css'
 
 const Bmwz4s = () => {
@@ -40,13 +36,6 @@ const Bmwz4s = () => {
             {/* Gallery and Specifications */}
             <section className="img-info-wrapper">
                 <section className="car-spec-container">
-                    <section className="img-container">
-                        <img src={Bmwz4_1} alt="BMW Z4 Cabriolet back view" />
-                        <img src={Bmwz4_2} alt="BMW Z4 Cabriolet interior front view" />
-                        <img src={Bmwz4_3} alt="BMW Z4 Cabriolet interior front" />
-                        <img src={Bmwz4_4} alt="BMW Z4 Cabriolet driving" />
-                    </section>
-
                     <section className="info-container">
                         <h3>Key Specifications</h3>
                         <ul>

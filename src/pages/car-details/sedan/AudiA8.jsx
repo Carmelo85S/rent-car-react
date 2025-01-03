@@ -1,11 +1,6 @@
 import AudiA8_hero from '../../../assets/sedan/audi-a8/audi-a8-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import AudiA8_1 from '../../../assets/sedan/audi-a8/audi-a8-front-intern.webp';
-import AudiA8_2 from '../../../assets/sedan/audi-a8/audi-a8-back-interior-display.webp';
-import AudiA8_3 from '../../../assets/sedan/audi-a8/audi-a8-back-interior-seat.webp';
-import AudiA8_4 from '../../../assets/sedan/audi-a8/audi-a8-back.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const AudiA8 = () => {
@@ -36,12 +31,6 @@ const AudiA8 = () => {
         </div>
         <section className="img-info-wrapper">
             <section className="car-spec-container">
-                <section className="img-container">
-                    <img src={AudiA8_1} alt="audi a8 front interior" />
-                    <img src={AudiA8_2} alt="audi a8 back interior display" />
-                    <img src={AudiA8_3} alt="audi a8 back interior seats" />
-                    <img src={AudiA8_4} alt="audi a8 back view" />
-                </section>
                 <section className="info-container">
                 <h3>Key Specifications</h3>
                     <ul>

@@ -1,11 +1,6 @@
 import RangeRoverHero from '../../../assets/suv/range-rover/range-rover-hero.webp';
 import FormBooking from '../../../components/FormBooking';
 import Title from '../../../components/Title';
-import RangeRover_1 from '../../../assets/suv/range-rover/range-rover-seats.webp';
-import RangeRover_2 from '../../../assets/suv/range-rover/range-rover-front-interior.webp';
-import RangeRover_3 from '../../../assets/suv/range-rover/range-rover-door.webp';
-import RangeRover_4 from '../../../assets/suv/range-rover/range-rover-back-seat.webp';
-
 import '../../../style/car-details/car-details.css'
 
 const RangeRover = () => {
@@ -36,12 +31,6 @@ const RangeRover = () => {
     </div>
     <section className="img-info-wrapper">
         <section className="car-spec-container">
-            <section className="img-container">
-                <img src={RangeRover_1} alt="range rover seats" />
-                <img src={RangeRover_2} alt="range rover front interior" />
-                <img src={RangeRover_3} alt="range rover door open" />
-                <img src={RangeRover_4} alt="range rover back seat" />
-            </section>
             <section className="info-container">
             <h3>Key Specifications</h3>
                 <ul>
