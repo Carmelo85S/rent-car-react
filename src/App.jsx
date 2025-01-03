@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollTop from './components/ScrollTop';
@@ -7,7 +7,7 @@ import { redirect } from './redirect';
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollTop />
         <Navbar />
         <Routes>
@@ -16,7 +16,7 @@ const App = () => {
           ))}
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
