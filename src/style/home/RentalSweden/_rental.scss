@@ -61,6 +61,14 @@
             @include flexbox(space-around, center, row, wrap);
             margin: auto;
 
+            .info-container{
+                @include dimension(500px, 600px);
+                @include info;
+                text-align: justify;
+                margin: 0 10px;
+                @include flexbox(space-between, center, column);
+            }
+
             .img-container {
                 @include dimension(300px, 500px);
                 @include flexbox(space-around, center, row, wrap);

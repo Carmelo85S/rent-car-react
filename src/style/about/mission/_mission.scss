@@ -18,7 +18,7 @@
         margin: auto;
 
         .image{
-            @include dimension(500px, auto);
+            @include dimension(450px, auto);
             border-radius: 4px;
             margin: 20px;
             box-shadow: 2px 2px 12px rgb(69, 69, 69);
